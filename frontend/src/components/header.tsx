@@ -4,9 +4,9 @@ import img from '/public/Neuschwanstein_Castle-Germany.jpg'
 export default function Header({ scrollHandler }) {
   return (
     <header className="relative">
-      <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
+      <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gray-100" />
       <div className="mx-auto">
-        <div className="relative shadow-xl sm:overflow-hidden">
+        <div className="relative shadow-xl overflow-hidden sm:rounded-3xl sm:overflow-visible">
           <div className="absolute inset-0 blur-sm">
             <Image
               priority
@@ -18,21 +18,21 @@ export default function Header({ scrollHandler }) {
             />
             <div className="absolute inset-0 bg-orange-100 mix-blend-multiply" />
           </div>
-          <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
-            <p className="relative left-0 right-0 mx-auto mt-5 max-w-xl text-center text-xl font-semibold uppercase tracking-wide text-blue-600">
-                O lugar certo para você ficar em Lavras-MG
+          <div className="relative px-4 py-8 md:py-16 lg:py-32 sm:max-w-xl md:max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto">
+            <p className="text-center text-lg md:text-xl lg:text-2xl font-semibold uppercase tracking-wide text-blue-600 mb-4 md:mb-6 lg:mb-8">
+              O lugar certo para você ficar em Lavras-MG
             </p>
-            <h1 className="mt-1 text-center font-bold uppercase text-gray-900 sm:text-5xl sm:tracking-tight lg:text-7xl">
-              <span className="block text-white">Pensão Mansão</span>
-              <span className="block font-bold text-blue-500">Azul</span>
+            <h1 className="text-center font-bold uppercase text-gray-900 text-3xl sm:text-5xl md:text-6xl lg:text-7xl mb-4 md:mb-6 lg:mb-8">
+              <span className="text-white">Pensão Mansão</span>
+              <span className="font-bold text-blue-500"> Azul</span>
             </h1>
-            <p className="relative left-0 right-0 mx-auto mt-5 max-w-xl text-center text-xl font-semibold uppercase tracking-wide text-blue-600">
-                Mais de 20 anos de tradição e qualidade
+            <p className="text-center text-lg md:text-xl lg:text-2xl font-semibold uppercase tracking-wide text-blue-600 mb-8 md:mb-12 lg:mb-16">
+              Mais de 20 anos de tradição e qualidade
             </p>
 
-            <div className="mx-auto mt-10  flex max-w-none justify-center">
+            <div className="mx-auto max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl flex sm: justify-center">
               <button
-                className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-blue-600 shadow-sm hover:bg-orange-100 sm:px-8"
+                className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-orange-600 shadow-sm hover:bg-orange-100 sm:px-8"
                 onClick={scrollHandler}
               >
                 Ver Quartos
