@@ -15,6 +15,9 @@ O objetivo deste projeto é fornecer uma plataforma para aluguel de quartos em u
 
 # Tecnologias utilizadas
 - React
+- Next
+- Tailwind Css
+- TypeScript
 - .NET
 - MongoDB
 
