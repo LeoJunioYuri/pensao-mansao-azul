@@ -1,32 +1,3 @@
-// import Image from 'next/image'
-// import img from '/public/Neuschwanstein_Castle-Germany.jpg'
-
-// export default function Header({ scrollHandler }) {
-//   return (
-//     <header className=" h-3/4 bg-gray-900">
-//       <div className="h-3/4 inset-0 bg-cover shadow-xl overflow-hidden sm:rounded-3xl sm:overflow-visible">
-//         <Image
-//           src={img}
-//           className="object-cover w-full h-full"
-//           alt="Background"
-//           layout="fill"
-//           objectFit="cover"
-//           objectPosition="center"
-//           placeholder="blur"
-//         />
-//       </div>
-//       <div className="relative w-full mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8 ">
-//         <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
-//           Bem-vindo ao Meu Site
-//         </h1>
-//         <p className="mt-6 max-w-3xl text-xl text-gray-300">
-//           Este é um exemplo de cabeçalho responsivo usando React e Tailwind CSS.
-//         </p>
-//       </div>
-//     </header>
-//   )
-// }
-
 import Image from "next/image";
 import img from "/public/Neuschwanstein_Castle-Germany.jpg";
 
