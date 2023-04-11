@@ -1,7 +1,12 @@
 import Image from "next/image";
 import img from "/public/Neuschwanstein_Castle-Germany.jpg";
+import { MouseEventHandler } from 'react';
 
-export default function Header({ scrollHandler }) {
+interface HeaderProps {
+  scrollHandler: MouseEventHandler<HTMLButtonElement>;
+}
+
+export default function Header({ scrollHandler } : HeaderProps) {
   return (
     <header className="relative shadow-xl overflow-hidden sm:rounded-3xl sm:overflow-visible">
         <div className="absolute inset-x-0 inset-0 blur-sm">

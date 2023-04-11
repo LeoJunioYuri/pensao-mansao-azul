@@ -1,139 +1,146 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import Header from '@component/components/header'
-import Navbar from '@component/components/navbar'
+import { useRef } from 'react'
+import Navbar from '@component/components/Navbar';
+import RoomCard from '@component/components/RoomCard'
+import Header from '@component/components/Header';
 
-const inter = Inter({ subsets: ['latin'] })
+const products = [
+  {
+    id: 1,
+    name: "Product 1",
+    shortDescription: "Lorem ipsum dolor sit amet",
+    price: 10,
+    imageGroups: [
+      {
+        images: [
+          {
+            link: "https://via.placeholder.com/150",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "Product 2",
+    shortDescription: "Lorem ipsum dolor sit amet",
+    price: 20,
+    imageGroups: [
+      {
+        images: [
+          {
+            link: "https://via.placeholder.com/150",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "Product 3",
+    shortDescription: "Lorem ipsum dolor sit amet",
+    price: 30,
+    imageGroups: [
+      {
+        images: [
+          {
+            link: "https://via.placeholder.com/150",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "Product 3",
+    shortDescription: "Lorem ipsum dolor sit amet",
+    price: 30,
+    imageGroups: [
+      {
+        images: [
+          {
+            link: "https://via.placeholder.com/150",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: "Product 3",
+    shortDescription: "Lorem ipsum dolor sit amet",
+    price: 30,
+    imageGroups: [
+      {
+        images: [
+          {
+            link: "https://via.placeholder.com/150",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 5,
+    name: "Product 3",
+    shortDescription: "Lorem ipsum dolor sit amet",
+    price: 30,
+    imageGroups: [
+      {
+        images: [
+          {
+            link: "https://via.placeholder.com/150",
+          },
+        ],
+      },
+    ],
+  },
+];
 
-const scrollHandler = (e: { preventDefault: () => void }) => {
-  e.preventDefault()
-  // @ts-ignore
-  coffeeRef.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start',
-  })
-}
 
 export default function Home() {
+  let roomRef = useRef<HTMLParagraphElement | null>(null);
+
+  const scrollHandler = (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+    if (roomRef.current) {
+      roomRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+  };
+  
+  
+
   return (
     <>
-    <Navbar />
-    <Header scrollHandler={scrollHandler} />
-    </>
-/*     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Hello World&nbsp;
-          <code className="font-mono font-bold">src/pages/index.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      <Navbar />
+      <Header scrollHandler={scrollHandler} />
+      <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+        <div className="sm:py-15 mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <p
+              className="mt-1 text-4xl font-bold uppercase rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700sm:text-5xl sm:tracking-tight lg:text-5xl"
+              ref={roomRef}
+            >
+              Veja nossas opções de estadia
+            </p>
+          </div>
         </div>
+        <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+          {products.map((product) => (
+            <RoomCard product={product} key={product.id} />
+          ))}
+        </div>
+        <div className="md:py-16 mx-auto max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl flex justify-center">
+            <button
+              className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-blue-600 shadow-sm hover:bg-orange-100 sm:px-8"
+              // onClick={}
+            >
+              Ver todas as opções
+            </button>
+          </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
-          >
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
-          >
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
-          >
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
-          >
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main> */
+    </>
   )
 }
