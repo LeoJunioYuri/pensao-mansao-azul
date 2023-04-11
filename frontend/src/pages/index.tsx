@@ -2,6 +2,7 @@ import { useRef } from 'react'
 import Navbar from '@component/components/Navbar';
 import RoomCard from '@component/components/RoomCard'
 import Header from '@component/components/Header';
+import About from '@component/components/About';
 
 const products = [
   {
@@ -140,6 +141,7 @@ export default function Home() {
             </button>
           </div>
       </div>
+      <About />
     </>
   )
 }
