@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-      <footer className="center mt-5 flex justify-center space-x-4 bg-[#090c24] text-white-700 p-4 text-xs">
+      <footer className="center mt-5 flex justify-center space-x-4 dark:bg-slate-900 dark:text-white p-4 text-xs">
         <p>Desenvolvido por Leonardo Basso </p>
         <span>|</span>
         <a

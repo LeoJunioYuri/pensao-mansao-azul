@@ -3,6 +3,7 @@ import Navbar from '@component/components/Navbar';
 import RoomCard from '@component/components/RoomCard'
 import Header from '@component/components/Header';
 import About from '@component/components/About';
+import Perks from '@component/components/Perks';
 
 const products = [
   {
@@ -142,6 +143,7 @@ export default function Home() {
           </div>
       </div>
       <About />
+      <Perks />
     </>
   )
 }
