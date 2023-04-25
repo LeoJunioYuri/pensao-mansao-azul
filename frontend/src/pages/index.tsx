@@ -4,6 +4,7 @@ import RoomCard from '@component/components/RoomCard'
 import Header from '@component/components/Header';
 import About from '@component/components/About';
 import Perks from '@component/components/Perks';
+import Contact from '@component/components/Contact';
 
 const products = [
   {
@@ -117,7 +118,8 @@ export default function Home() {
   return (
     <>
       <Header scrollHandler={scrollHandler} />
-      <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+      <About />
+      <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 my-16">
         <div className="sm:py-15 mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <p
@@ -142,8 +144,8 @@ export default function Home() {
             </button>
           </div>
       </div>
-      <About />
       <Perks />
+      <Contact />
     </>
   )
 }
