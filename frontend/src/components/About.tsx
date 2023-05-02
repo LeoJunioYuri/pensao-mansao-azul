@@ -46,20 +46,16 @@ export default function About() {
             className="cursor-pointer"
           >
             <div className="font-display uppercase text-gray-600 text-primary-500 text-xs font-bold tracking-widest leading-loose after:content">
-              {/* {featuredPost.fields.category.fields.title} */}
               Teste Titulo Categoria
             </div>
             <div className="border-b-2 border-primary-500 w-8"></div>
             <div className="mt-4 uppercase text-gray-600 italic font-semibold text-xs">
-              {/* {dateStr} */}
               data
             </div>
             <h2 className="font-display text-secondary-500 mt-1 text-gray-600 text-2xl group-hover:text-primary-500 transition duration-300">
-              {/* {featuredPost.fields.title} */}
               Teste Titulo Post
             </h2>
             <p className="text-sm mt-3 leading-loose text-gray-600 font-medium line-clamp-4">
-              {/* {contentStr} */}
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
               auctor, magna eget convallis consectetur, eros est luctus nulla,
               vel pellentesque magna nunc eget ipsum. Donec vel lacus vitae
@@ -77,20 +73,16 @@ export default function About() {
             className="cursor-pointer"
           >
             <div className="font-display uppercase text-gray-600 text-primary-500 text-xs font-bold tracking-widest leading-loose after:content">
-              {/* {featuredPost.fields.category.fields.title} */}
               Teste Titulo Categoria
             </div>
             <div className="border-b-2 border-primary-500 w-8"></div>
             <div className="mt-4 uppercase text-gray-600 italic font-semibold text-xs">
-              {/* {dateStr} */}
               data
             </div>
             <h2 className="font-display text-secondary-500 mt-1 text-gray-600 text-2xl group-hover:text-primary-500 transition duration-300">
-              {/* {featuredPost.fields.title} */}
               Teste Titulo Post
             </h2>
             <p className="text-sm mt-3 leading-loose text-gray-600 font-medium line-clamp-4">
-              {/* {contentStr} */}
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
               auctor, magna eget convallis consectetur, eros est luctus nulla,
               vel pellentesque magna nunc eget ipsum. Donec vel lacus vitae
@@ -150,20 +142,16 @@ export default function About() {
             className="cursor-pointer"
           >
             <div className="font-display uppercase text-gray-600 text-primary-500 text-xs font-bold tracking-widest leading-loose after:content">
-              {/* {featuredPost.fields.category.fields.title} */}
               Teste Titulo Categoria
             </div>
             <div className="border-b-2 border-primary-500 w-8"></div>
             <div className="mt-4 uppercase text-gray-600 italic font-semibold text-xs">
-              {/* {dateStr} */}
               data
             </div>
             <h2 className="font-display text-secondary-500 mt-1 text-gray-600 text-2xl group-hover:text-primary-500 transition duration-300">
-              {/* {featuredPost.fields.title} */}
               Teste Titulo Post
             </h2>
             <p className="text-sm mt-3 leading-loose text-gray-600 font-medium line-clamp-4">
-              {/* {contentStr} */}
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
               auctor, magna eget convallis consectetur, eros est luctus nulla,
               vel pellentesque magna nunc eget ipsum. Donec vel lacus vitae

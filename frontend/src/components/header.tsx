@@ -18,7 +18,6 @@ export default function Header({ scrollHandler } : HeaderProps) {
             placeholder="blur"
             alt="Foto da casa"
           />
-          {/* <div className="absolute inset-0 bg-orange-100 mix-blend-multiply" /> */}
         </div>
         <div className="relative px-4 py-8 md:py-16 lg:py-32 sm:max-w-xl md:max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto">
           <p className="text-center text-lg md:text-xl lg:text-2xl font-semibold tracking-wide mb-8 md:mb-12 lg:mb-16 mt-6 text-gray-300">

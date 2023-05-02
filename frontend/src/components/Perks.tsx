@@ -1,14 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import img from "/public/Hohenzollern-Castle.jpg";
 
 export default function Perks() {
-  // Perks({ isDarkMode })
-  //const bgColor = isDarkMode ? "bg-navy" : "bg-white";
-  //const textColor = isDarkMode ? "text-white" : "text-gray-900";
-  const bgColor = "bg-navy";
-  const textColor = "text-white";
-
   return (
     <section className="mx-16">
       <div className="text-center">
@@ -17,7 +10,7 @@ export default function Perks() {
         </p>
       </div>
       <div className="flex flex-wrap my-16 ">
-        <div className={`w-full sm:w-1/2 md:w-1/4 ${bgColor} flex-shrink`}>
+        <div className={`w-full sm:w-1/2 md:w-1/4 bg-navy flex-shrink`}>
           <div className="mx-auto w-16">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -35,18 +28,18 @@ export default function Perks() {
             </svg>
           </div>
           <div
-            className={`px-6 py-8 ${textColor} text-center text-2xl font-bold`}
+            className={`px-6 py-8 text-white text-center text-2xl font-bold`}
           >
             Lorem Ipsum
           </div>
-          <div className={`px-6 pb-8 ${textColor} text-center`}>
+          <div className={`px-6 pb-8 text-white text-center`}>
             At vero eos et accusamus et iusto odio dignissimos ducimus qui
             blanditiis praesentium voluptatum deleniti atque corrupti quos
             dolores et quas molestias excepturi sint.
           </div>
         </div>
 
-        <div className={`w-full sm:w-1/2 md:w-1/4 ${bgColor} flex-shrink`}>
+        <div className={`w-full sm:w-1/2 md:w-1/4 bg-navy flex-shrink`}>
           <div className="mx-auto w-16">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -69,18 +62,18 @@ export default function Perks() {
             </svg>
           </div>
           <div
-            className={`px-6 py-8 ${textColor} text-center text-2xl font-bold`}
+            className={`px-6 py-8 text-white text-center text-2xl font-bold`}
           >
             Lorem Ipsum
           </div>
-          <div className={`px-6 pb-8 ${textColor} text-center`}>
+          <div className={`px-6 pb-8 text-white text-center`}>
             At vero eos et accusamus et iusto odio dignissimos ducimus qui
             blanditiis praesentium voluptatum deleniti atque corrupti quos
             dolores.
           </div>
         </div>
 
-        <div className={`w-full sm:w-1/2 md:w-1/4 ${bgColor} flex-shrink`}>
+        <div className={`w-full sm:w-1/2 md:w-1/4 bg-navy flex-shrink`}>
           <div className="mx-auto w-16">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -98,18 +91,18 @@ export default function Perks() {
             </svg>
           </div>
           <div
-            className={`px-6 py-8 ${textColor} text-center text-2xl font-bold`}
+            className={`px-6 py-8 text-white text-center text-2xl font-bold`}
           >
             Lorem Ipsum
           </div>
-          <div className={`px-6 pb-8 ${textColor} text-center`}>
+          <div className={`px-6 pb-8 text-white text-center`}>
             At vero eos et accusamus et iusto odio dignissimos ducimus qui
             blanditiis praesentium voluptatum deleniti atque corrupti quos
             dolores.
           </div>
         </div>
 
-        <div className={`w-full sm:w-1/2 md:w-1/4 ${bgColor} flex-shrink`}>
+        <div className={`w-full sm:w-1/2 md:w-1/4 bg-navy flex-shrink`}>
           <div className="mx-auto w-16">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -127,11 +120,11 @@ export default function Perks() {
             </svg>
           </div>
           <div
-            className={`px-6 py-8 ${textColor} text-center text-2xl font-bold`}
+            className={`px-6 py-8 text-white text-center text-2xl font-bold`}
           >
             Lorem Ipsum
           </div>
-          <div className={`px-6 pb-8 ${textColor} text-center`}>
+          <div className={`px-6 pb-8 text-white text-center`}>
             At vero eos et accusamus et iusto odio dignissimos ducimus qui
             blanditiis praesentium voluptatum deleniti atque corrupti quos
             dolores. At vero eos et accusamus et iusto odio dignissimos ducimus

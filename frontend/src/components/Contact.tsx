@@ -14,35 +14,6 @@ export default function Contact() {
           <h2 className="text-3xl font-bold mb-2">Pensão Mansão Azul</h2>
           <p className="font-bold text-gray-400  mb-6">Agende já sua visita!</p>
 
-          {/* <div className="card bg-neutral h-48 px-3 hover:bg-primary">
-            <div className="flex justify-between">
-              <h2 className="font-bold mb-2">Project name</h2>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
-                />
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
-                />
-              </svg>
-            </div>
-            <p className="text-left py-4 font-bold group-hover:bg-primary">
-              Explaination of the project
-            </p>
-            <p className="text-left pb-4 font-bold">Tag, tag, tag</p>
-          </div> */}
-
           <p className="font-bold mb-2">Endereço</p>
 
           <p className="text-gray-500 mb-6 underline underline-offset-4">
