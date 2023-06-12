@@ -1,16 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
-import img from "/public/Hohenzollern-Castle.jpg";
-import img2 from "/public/Southlake-castle.jpg";
-import img3 from "/public/Wayne-Manor.jpg";
+import img from "/public/casa-frente-2.jpg";
+import img2 from "/public/casa_longe.jpg";
+import img3 from "/public/vista.jpg";
 
 export default function About() {
   return (
-    <div className="relative mx-16 my-16">
-      <div className="sm:py-15 mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
+    <div className="relative mx-16 my-16 ">
+      <div className="sm:py-15 mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8 bg:babyBlue">
         <div className="text-center">
           <p
-            className="mt-1 text-4xl font-bold uppercase rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700sm:text-5xl sm:tracking-tight lg:text-5xl"
+            className="mt-1 text-4xl font-bold uppercase rounded md:hover:bg-transparent md:border-0 sm:tracking-tight lg:text-5xl"
             //ref={roomRef}
           >
             Sobre nós
@@ -18,7 +18,7 @@ export default function About() {
         </div>
       </div>
       <div className="flex flex-col sm:flex-row max-w-screen-xl mx-auto pt-8 group">
-        <div className="sm:w-1/2 lg:w-2/3 sm:rounded-t-none sm:rounded-l-lg relative">
+        <div className="sm:w-1/2 lg:w-2/3 sm:rounded-t-none sm:rounded-l-lg relative ">
           <Link
             // href={`/blog/${featuredPost?.fields.slug}`}
             href={""}
@@ -31,7 +31,6 @@ export default function About() {
                 //alt={featuredPost.fields.image.label}
                 alt="teste"
                 className="object-cover object-center rounded-t-lg sm:rounded-l-lg sm:rounded-t-none"
-                priority
                 fill
                 sizes="(max-width: 640px) 100vw,
                                             50vw"
@@ -104,14 +103,13 @@ export default function About() {
             href={""}
             className="cursor-pointer"
           >
-            <div className="h-64 sm:h-96 relative" style={{ width: "100%" }}>
+            <div className="h-64 sm:h-96 relative">
               <Image
                 //src={featuredPost.fields.image.url}
                 src={img2}
                 //alt={featuredPost.fields.image.label}
                 alt="teste"
-                className="object-cover object-center rounded-t-lg sm:rounded-l-lg sm:rounded-t-none"
-                priority
+                className="rounded-t-lg sm:rounded-l-lg sm:rounded-t-none"
                 fill
                 sizes="(max-width: 640px) 100vw,
                                             50vw"
@@ -135,7 +133,6 @@ export default function About() {
                 //alt={featuredPost.fields.image.label}
                 alt="teste"
                 className="object-cover object-center rounded-t-lg sm:rounded-l-lg sm:rounded-t-none"
-                priority
                 fill
                 sizes="(max-width: 640px) 100vw,
                                             50vw"

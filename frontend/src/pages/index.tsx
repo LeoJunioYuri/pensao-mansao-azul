@@ -1,10 +1,22 @@
 import { useRef } from 'react'
-import Navbar from '@component/components/Navbar';
 import RoomCard from '@component/components/RoomCard'
-import Header from '@component/components/Header';
 import About from '@component/components/About';
 import Perks from '@component/components/Perks';
 import Contact from '@component/components/Contact';
+import { Outlet } from 'react-router-dom';
+import Header from '@component/components/header';
+
+
+import sala from "/public/sala.jpg";
+import quarto5 from "/public/quarto5.jpg";
+import quarto6 from "/public/quarto6.jpg";
+import quarto13 from "/public/quarto13.jpg";
+import quarto15 from "/public/quarto15.jpg";
+import quarto16 from "/public/quarto16.jpg";
+import quartoTorre from "/public/quarto-torre.jpg";
+import vista from "/public/vista.jpg";
+import escadaSala from "/public/escada-sala.jpg";
+
 
 const products = [
   {
@@ -16,7 +28,7 @@ const products = [
       {
         images: [
           {
-            link: "https://via.placeholder.com/150",
+            link: quartoTorre,
           },
         ],
       },
@@ -31,7 +43,7 @@ const products = [
       {
         images: [
           {
-            link: "https://via.placeholder.com/150",
+            link: quarto5,
           },
         ],
       },
@@ -46,7 +58,7 @@ const products = [
       {
         images: [
           {
-            link: "https://via.placeholder.com/150",
+            link: escadaSala,
           },
         ],
       },
@@ -61,7 +73,7 @@ const products = [
       {
         images: [
           {
-            link: "https://via.placeholder.com/150",
+            link: quarto13,
           },
         ],
       },
@@ -76,7 +88,7 @@ const products = [
       {
         images: [
           {
-            link: "https://via.placeholder.com/150",
+            link: quarto15,
           },
         ],
       },
@@ -91,7 +103,7 @@ const products = [
       {
         images: [
           {
-            link: "https://via.placeholder.com/150",
+            link: quarto16,
           },
         ],
       },
@@ -123,7 +135,7 @@ export default function Home() {
         <div className="sm:py-15 mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <p
-              className="mt-1 text-4xl font-bold uppercase rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700sm:text-5xl sm:tracking-tight lg:text-5xl"
+              className="mt-1 text-4xl font-bold uppercase rounded hover:babyBlue md:hover:bg-transparent md:border-0 md:hover:babyBlue sm:text-5xl sm:tracking-tight lg:text-5xl"
               ref={roomRef}
             >
               Veja nossas opções de estadia
@@ -146,6 +158,9 @@ export default function Home() {
       </div>
       <Perks />
       <Contact />
+      {/* <div id="detail">
+        <Outlet />
+      </div> */}
     </>
   )
 }

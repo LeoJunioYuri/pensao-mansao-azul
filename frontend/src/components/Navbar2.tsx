@@ -1,13 +1,14 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Image from "next/image";
 import logo from "/public/logo-example.svg";
+// import logo from "/public/castle-logo.svg";
 import AboutUs from "../pages/AboutUs";
 
 export default function Navbar() {
   return (
     <Router>
-      <nav className="fixed top-0 z-50 w-full bg-navyBlue border-gray-200 dark:bg-navyBlue">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
+      <nav className="fixed top-0 w-full z-50 bg-navyBlue border-gray-200 dark:bg-navyBlue">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link to="/" className="flex items-center">
             <Image src={logo} className="h-8 mr-3" alt="Logo Pensão" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
@@ -48,7 +49,8 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
-              <Link
+                {/* <Link to={`/sobre`}>Your Name</Link> */}
+                <Link
                   to="/sobre"
                   className="block py-2 pl-3 pr-4 text-botticelli rounded hover:sail md:hover:bg-transparent md:border-0 md:hover:text-sail md:p-0 dark:text-white md:dark:hover:sail dark:hover:sail dark:hover:sail md:dark:hover:bg-transparent"
                 >
@@ -83,6 +85,7 @@ export default function Navbar() {
           </div>
         </div>
         <Routes>
+          {/* <Route path="/" element={<h1>Home</h1>} /> */}
           <Route path="/sobre" element={<AboutUs />} />
         </Routes>
       </nav>
