@@ -53,30 +53,6 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* <section className="">
-        <div className="flex">
-          <div className="w-1/2">
-            <Image src={ProfileImage} alt="Profile" className="w-full" />
-          </div>
-          <div className="w-1/2 p-8">
-            <h2 className="text-2xl font-bold mb-4">Sobre nós</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              malesuada neque ac dolor luctus eleifend. Aliquam erat volutpat.
-              Donec et nunc fringilla, sollicitudin nisl eget, fringilla enim.
-              Mauris et diam vel sem cursus dapibus. Nulla facilisi. Proin id
-              nisi eget felis vulputate pretium.
-            </p>
-            <p>
-              In sit amet dolor ligula. Nullam id lacus rutrum, gravida nulla
-              at, vestibulum ante. Ut pellentesque mi a felis pretium suscipit.
-              Maecenas vel ligula pharetra, laoreet lectus vitae, lobortis elit.
-              Nullam convallis justo quis tellus convallis, ac facilisis nunc
-              hendrerit.
-            </p>
-          </div>
-        </div>
-      </section> */}
       <section className="relative bg-gray-100 py-24 px-4">
         <div className="container mx-auto">
           <PageTitle heading="Build something">
@@ -85,28 +61,7 @@ export default function AboutUs() {
             segurança e fazer amigos de boa índole em um ambiente com conforto e
             privacidade.
           </PageTitle>
-          {/* <div className="mx-auto mt-20 mb-48 grid max-w-5xl grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
-              {contactData.map(({ title, icon, description }) => (
-                <Card
-                  key={title}
-                  color="transparent"
-                  shadow={false}
-                  className="text-center text-blue-gray-900"
-                >
-                  <div className="mx-auto mb-6 grid h-14 w-14 place-items-center rounded-full bg-white shadow-lg shadow-gray-500/20">
-                    {React.createElement(icon, {
-                      className: "w-5 h-5",
-                    })}
-                  </div>
-                  <Typography variant="h5" color="blue-gray" className="mb-2">
-                    {title}
-                  </Typography>
-                  <Typography className="font-normal text-blue-gray-500">
-                    {description}
-                  </Typography>
-                </Card>
-              ))}
-            </div> */}
+
           <div className="mx-auto mt-20 mb-48 grid max-w-5xl grid-cols-3 gap-16 md:grid-cols-2 lg:grid-cols-3">
             <Card
               key="card1"
@@ -233,31 +188,3 @@ export default function AboutUs() {
     </>
   );
 }
-
-// const AboutUs: React.FC = () => {
-//   return (
-//     <div className="flex">
-//       <div className="w-1/2">
-//         <Image src={ProfileImage} alt="Profile" className="w-full" />
-//       </div>
-//       <div className="w-1/2 p-8">
-//         <h2 className="text-2xl font-bold mb-4">Sobre nós</h2>
-//         <p>
-//           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-//           malesuada neque ac dolor luctus eleifend. Aliquam erat volutpat.
-//           Donec et nunc fringilla, sollicitudin nisl eget, fringilla enim.
-//           Mauris et diam vel sem cursus dapibus. Nulla facilisi. Proin id
-//           nisi eget felis vulputate pretium.
-//         </p>
-//         <p>
-//           In sit amet dolor ligula. Nullam id lacus rutrum, gravida nulla at,
-//           vestibulum ante. Ut pellentesque mi a felis pretium suscipit.
-//           Maecenas vel ligula pharetra, laoreet lectus vitae, lobortis elit.
-//           Nullam convallis justo quis tellus convallis, ac facilisis nunc
-//           hendrerit.
-//         </p>
-//       </div>
-//     </div>
-
-//   );
-// };
