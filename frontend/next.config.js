@@ -2,8 +2,20 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['via.placeholder.com'],
+    domains: ["via.placeholder.com"],
   },
-}
+};
 
-module.exports = nextConfig
+// next.config.js
+module.exports = {
+  async rewrites() {
+    return [
+      {
+        source: '/:any*',
+        destination: '/',
+      },
+    ];
+  },
+};
+
+module.exports = nextConfig;

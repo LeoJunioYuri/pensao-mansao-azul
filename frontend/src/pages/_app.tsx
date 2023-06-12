@@ -1,22 +1,43 @@
-import Navbar from '@component/components/Navbar'
-import Footer from '@component/components/Footer'
-import '@component/styles/globals.css'
-import type { AppProps } from 'next/app'
-import { useEffect } from 'react'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Footer from "@component/components/Footer";
+import ErrorPage from "./error-page";
+import "@component/styles/globals.css";
+import type { AppProps } from "next/app";
+import { useEffect, useState } from "react";
+import AboutUs from "@component/pages/AboutUs";
+import Navbar from "@component/components/Navbar2";
+
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <AboutUs />,
+//     errorElement: <ErrorPage />,
+//     children: [
+//       {
+//         path: "/sobre",
+//         element: <AboutUs />,
+//       },
+//     ],
+//   },
+// ]);
 
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
-    document.body.classList.add('dark')
+    (document as any).body.classList.add("dark");
     return () => {
-      document.body.classList.remove('dark')
-    }
-  }, [])
+      (document as any).body.classList.remove("dark");
+    };
+  }, []);
 
-  return (
+  const [render, setRender] = useState(false);
+  useEffect(() => setRender(true), []);
+  return render ? (
     <>
-      <Navbar />
-      <Component {...pageProps} />
-      <Footer />
+      
+        <Navbar />
+        <Component {...pageProps} />
+        <Footer />
+      
     </>
-  )
+  ) : null;
 }
