@@ -28,7 +28,9 @@ module.exports = withMT({
       'sail': '#A1D2F6', // azul da casa
       'navyBlue': '#05445E', //azul escuro da pra usar em navbar
       'babyBlue': '#D4F1F4', //azul bem clarinho, da pra usar em fundo
-      'blueHome': '#2E8BC0' //azul da casa tambem
+      'blueHome': '#2E8BC0', //azul da casa tambem
+      'royalBlue': '#091235',
+      'darkNavyBlue': '#14202E'
     },
     extend: {
       backgroundImage: {
