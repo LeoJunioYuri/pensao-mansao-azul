@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import Image from "next/image";
 import logo from "/public/logo-example.svg";
 import AboutUs from "../pages/AboutUs";
@@ -13,7 +13,6 @@ export default function Navbar() {
   };
   
   return (
-    <Router>
       <nav className="fixed top-0 w-full z-50 bg-navyBlue border-gray-200 dark:bg-darkNavyBlue shadow-lg">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link to="/" className="flex items-center">
@@ -100,6 +99,5 @@ export default function Navbar() {
           <Route path="/sobre" element={<AboutUs />} />
         </Routes>
       </nav>
-    </Router>
   );
 }

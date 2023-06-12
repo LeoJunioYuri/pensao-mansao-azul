@@ -1,10 +1,10 @@
 import { useRef } from 'react'
-import RoomCard from '@component/components/RoomCard'
-import About from '@component/components/About';
-import Perks from '@component/components/Perks';
-import Contact from '@component/components/Contact';
+import RoomCard from '@component/sections/RoomCard'
+import About from '@component/sections/About';
+import Perks from '@component/sections/Perks';
+import Contact from '@component/sections/Contact';
 import { Outlet } from 'react-router-dom';
-import Header from '@component/components/header';
+import Header from '@component/sections/header';
 
 
 import sala from "/public/sala.jpg";
