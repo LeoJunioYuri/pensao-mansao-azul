@@ -1,11 +1,11 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Footer from "@component/components/Footer";
+import Footer from "@component/sections/Footer";
 import ErrorPage from "./error-page";
 import "@component/styles/globals.css";
 import type { AppProps } from "next/app";
 import { useEffect, useState } from "react";
 import AboutUs from "@component/pages/AboutUs";
-import Navbar from "@component/components/Navbar2";
+import Navbar from "@component/sections/Navbar";
 
 // const router = createBrowserRouter([
 //   {
