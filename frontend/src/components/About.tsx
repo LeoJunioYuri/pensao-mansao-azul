@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import img from "/public/casa-frente-2.jpg";
-import img2 from "/public/casa_longe.jpg";
+import img2 from "/public/quarto6.jpg";
 import img3 from "/public/vista.jpg";
 
 export default function About() {
@@ -44,25 +44,15 @@ export default function About() {
             href={""}
             className="cursor-pointer"
           >
-            <div className="font-display uppercase text-gray-600 text-primary-500 text-xs font-bold tracking-widest leading-loose after:content">
-              {/* {featuredPost.fields.category.fields.title} */}
-              Teste Titulo Categoria
-            </div>
             <div className="border-b-2 border-primary-500 w-8"></div>
-            <div className="mt-4 uppercase text-gray-600 italic font-semibold text-xs">
-              {/* {dateStr} */}
-              data
-            </div>
             <h2 className="font-display text-secondary-500 mt-1 text-gray-600 text-2xl group-hover:text-primary-500 transition duration-300">
               {/* {featuredPost.fields.title} */}
-              Teste Titulo Post
+              Ambiente seguro e familiar
             </h2>
-            <p className="text-sm mt-3 leading-loose text-gray-600 font-medium line-clamp-4">
+            <p className="text-sm mt-3 leading-loose text-gray-600 font-medium line-clamp-6">
               {/* {contentStr} */}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              auctor, magna eget convallis consectetur, eros est luctus nulla,
-              vel pellentesque magna nunc eget ipsum. Donec vel lacus vitae
-              augue interdum tincidunt eget vel nibh.
+              A Pensão Mansão Azul oferece um ambiente seguro e tranquilo para morar, estudar e fazer amizades com pessoas de boa índole.
+              Com mais de 20 anos de tradição, proporciona conforto e privacidade aos seus residentes.
             </p>
           </Link>
         </div>
@@ -75,25 +65,15 @@ export default function About() {
             href={""}
             className="cursor-pointer"
           >
-            <div className="font-display uppercase text-gray-600 text-primary-500 text-xs font-bold tracking-widest leading-loose after:content">
-              {/* {featuredPost.fields.category.fields.title} */}
-              Teste Titulo Categoria
-            </div>
             <div className="border-b-2 border-primary-500 w-8"></div>
-            <div className="mt-4 uppercase text-gray-600 italic font-semibold text-xs">
-              {/* {dateStr} */}
-              data
-            </div>
             <h2 className="font-display text-secondary-500 mt-1 text-gray-600 text-2xl group-hover:text-primary-500 transition duration-300">
               {/* {featuredPost.fields.title} */}
-              Teste Titulo Post
+              Quartos e suítes individuais mobiliados
             </h2>
-            <p className="text-sm mt-3 leading-loose text-gray-600 font-medium line-clamp-4">
+            <p className="text-sm mt-3 leading-loose text-gray-600 font-medium line-clamp-6">
               {/* {contentStr} */}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              auctor, magna eget convallis consectetur, eros est luctus nulla,
-              vel pellentesque magna nunc eget ipsum. Donec vel lacus vitae
-              augue interdum tincidunt eget vel nibh.
+              A Pensão Mansão Azul disponibiliza quartos, suítes e flats mobiliados para aluguel. Cada andar conta com salas compartilhadas e cozinhas mobiliadas.
+              Os quartos são adequados para estudantes de graduação, mestrado e doutorado, além de professores e técnicos administrativos.
             </p>
           </Link>
         </div>
@@ -146,25 +126,16 @@ export default function About() {
             href={""}
             className="cursor-pointer"
           >
-            <div className="font-display uppercase text-gray-600 text-primary-500 text-xs font-bold tracking-widest leading-loose after:content">
-              {/* {featuredPost.fields.category.fields.title} */}
-              Teste Titulo Categoria
-            </div>
             <div className="border-b-2 border-primary-500 w-8"></div>
-            <div className="mt-4 uppercase text-gray-600 italic font-semibold text-xs">
-              {/* {dateStr} */}
-              data
-            </div>
             <h2 className="font-display text-secondary-500 mt-1 text-gray-600 text-2xl group-hover:text-primary-500 transition duration-300">
               {/* {featuredPost.fields.title} */}
-              Teste Titulo Post
+              Localização privilegiada
             </h2>
-            <p className="text-sm mt-3 leading-loose text-gray-600 font-medium line-clamp-4">
+            <p className="text-sm mt-3 leading-loose text-gray-600 font-medium line-clamp-8">
               {/* {contentStr} */}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              auctor, magna eget convallis consectetur, eros est luctus nulla,
-              vel pellentesque magna nunc eget ipsum. Donec vel lacus vitae
-              augue interdum tincidunt eget vel nibh.
+              A pensão está situada em um lugar privilegiado com ótima segurança.
+              Além disso, nas proximidades é possível encontrar padaria, farmácia, posto de saúde, papelaria, supermercados e armazém.
+              A pensão fica a apenas 10 minutos a pé da UFLA, tornando-a uma opção conveniente para estudantes, professores e funcionários que se mudam para Lavras.
             </p>
           </Link>
         </div>
