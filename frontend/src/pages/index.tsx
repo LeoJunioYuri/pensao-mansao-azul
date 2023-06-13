@@ -66,8 +66,8 @@ const products = [
     ],
   },
   {
-    id: 3,
-    name: "Product 3",
+    id: 4,
+    name: "Product 4",
     shortDescription: "Lorem ipsum dolor sit amet",
     price: 30,
     imageGroups: [
@@ -81,8 +81,8 @@ const products = [
     ],
   },
   {
-    id: 4,
-    name: "Product 3",
+    id: 5,
+    name: "Product 5",
     shortDescription: "Lorem ipsum dolor sit amet",
     price: 30,
     imageGroups: [
@@ -96,8 +96,8 @@ const products = [
     ],
   },
   {
-    id: 5,
-    name: "Product 3",
+    id: 6,
+    name: "Product 6",
     shortDescription: "Lorem ipsum dolor sit amet",
     price: 30,
     imageGroups: [
