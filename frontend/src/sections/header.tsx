@@ -1,6 +1,7 @@
 import Image from "next/image";
 import img from "/public/Neuschwanstein_Castle-Germany.jpg";
 import { MouseEventHandler } from "react";
+import { Button } from "@material-tailwind/react";
 
 interface HeaderProps {
   scrollHandler: MouseEventHandler<HTMLButtonElement>;
@@ -27,12 +28,15 @@ export default function Header({ scrollHandler }: HeaderProps) {
         </p>
 
         <div className="mx-auto max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl flex justify-center">
-          <button
+          {/* <button
             className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-blue-600 shadow-sm hover:bg-orange-100 sm:px-8"
             onClick={scrollHandler}
           >
             Ver Quartos
-          </button>
+          </button> */}
+          <Button variant="gradient" size="lg" className="mt-8"  onClick={scrollHandler}>
+              Ver Quartos
+          </Button>
         </div>
       </div>
     </header>
