@@ -7,8 +7,8 @@ export default function ErrorPage() {
     console.error(error);
     return (
       <div id="error-page">
-        <h1>Oops!</h1>
-        <p>Sorry, an unexpected error has occurred.</p>
+        <h1>Opa!</h1>
+        <p>Desculpe, ocorreu um erro inesperado.</p>
         <p>
           <i>{error.message}</i>
         </p>
@@ -18,8 +18,8 @@ export default function ErrorPage() {
 
   return (
     <div id="error-page">
-      <h1>Oops!</h1>
-      <p>Sorry, an unknown error has occurred.</p>
+      <h1>Opa!</h1>
+      <p>Desculpe, ocorreu um erro desconhecido.</p>
     </div>
   );
 }

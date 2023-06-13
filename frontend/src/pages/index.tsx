@@ -1,10 +1,7 @@
 import { useRef } from 'react'
-import RoomCard from '@component/sections/RoomCard'
-import About from '@component/sections/About';
-import Perks from '@component/sections/Perks';
-import Contact from '@component/sections/Contact';
+import About from '@component/components/About';
 import { Outlet } from 'react-router-dom';
-import Header from '@component/sections/Header';
+
 
 
 import sala from "/public/sala.jpg";
@@ -16,6 +13,10 @@ import quarto16 from "/public/quarto16.jpg";
 import quartoTorre from "/public/quarto-torre.jpg";
 import vista from "/public/vista.jpg";
 import escadaSala from "/public/escada-sala.jpg";
+import Header from '@component/components/Header';
+import RoomCard from '@component/components/RoomCard';
+import Perks from '@component/components/Perks';
+import Contact from '@component/components/Contact';
 
 
 const products = [
