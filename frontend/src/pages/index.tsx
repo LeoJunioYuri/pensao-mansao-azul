@@ -2,12 +2,12 @@ import { useRef } from 'react'
 import About from '@component/components/About';
 import { Outlet } from 'react-router-dom';
 
-import quarto5 from "/public/quarto5.jpg";
-import quarto13 from "/public/quarto13.jpg";
-import quarto15 from "/public/quarto15.jpg";
-import quarto16 from "/public/quarto16.jpg";
-import quartoTorre from "/public/quarto-torre.jpg";
-import quarto18 from "/public/quarto18.jpg";
+const quarto5 = require('/public/quarto5.jpg');
+const quarto13 = require('/public/quarto13.jpg');
+const quarto15 = require('/public/quarto15.jpg');
+const quarto16 = require('/public/quarto16.jpg');
+const quartoTorre = require('/public/quarto-torre.jpg');
+const quarto18 = require('/public/quarto18.jpg');
 import Header from '@component/components/Header';
 import RoomCard from '@component/components/RoomCard';
 import Perks from '@component/components/Perks';
