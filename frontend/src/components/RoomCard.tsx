@@ -65,7 +65,7 @@ export default function RoomCard({ product }: { product: Product }) {
       </div>
       <div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
         <h3>{product.name}</h3>
-        <p>${product.price}</p>
+        <p>R${product.price}</p>
       </div>
       <p className="mt-1 text-sm italic text-gray-500">
         {product.shortDescription}

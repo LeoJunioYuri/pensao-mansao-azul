@@ -2,17 +2,12 @@ import { useRef } from 'react'
 import About from '@component/components/About';
 import { Outlet } from 'react-router-dom';
 
-
-
-import sala from "/public/sala.jpg";
 import quarto5 from "/public/quarto5.jpg";
-import quarto6 from "/public/quarto6.jpg";
 import quarto13 from "/public/quarto13.jpg";
 import quarto15 from "/public/quarto15.jpg";
 import quarto16 from "/public/quarto16.jpg";
 import quartoTorre from "/public/quarto-torre.jpg";
-import vista from "/public/vista.jpg";
-import escadaSala from "/public/escada-sala.jpg";
+import quarto18 from "/public/quarto18.jpg";
 import Header from '@component/components/Header';
 import RoomCard from '@component/components/RoomCard';
 import Perks from '@component/components/Perks';
@@ -22,24 +17,9 @@ import Contact from '@component/components/Contact';
 const products = [
   {
     id: 1,
-    name: "Product 1",
+    name: "Quarto 5",
     shortDescription: "Lorem ipsum dolor sit amet",
-    price: 10,
-    imageGroups: [
-      {
-        images: [
-          {
-            link: quartoTorre,
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: 2,
-    name: "Product 2",
-    shortDescription: "Lorem ipsum dolor sit amet",
-    price: 20,
+    price: 549,
     imageGroups: [
       {
         images: [
@@ -51,25 +31,10 @@ const products = [
     ],
   },
   {
-    id: 3,
-    name: "Product 3",
+    id: 2,
+    name: "Quarto 13",
     shortDescription: "Lorem ipsum dolor sit amet",
-    price: 30,
-    imageGroups: [
-      {
-        images: [
-          {
-            link: escadaSala,
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: 4,
-    name: "Product 4",
-    shortDescription: "Lorem ipsum dolor sit amet",
-    price: 30,
+    price: 1099,
     imageGroups: [
       {
         images: [
@@ -81,10 +46,10 @@ const products = [
     ],
   },
   {
-    id: 5,
-    name: "Product 5",
+    id: 3,
+    name: "Quarto 15",
     shortDescription: "Lorem ipsum dolor sit amet",
-    price: 30,
+    price: 799,
     imageGroups: [
       {
         images: [
@@ -96,10 +61,10 @@ const products = [
     ],
   },
   {
-    id: 6,
-    name: "Product 6",
+    id: 4,
+    name: "Quarto 16",
     shortDescription: "Lorem ipsum dolor sit amet",
-    price: 30,
+    price: 749,
     imageGroups: [
       {
         images: [
@@ -110,7 +75,38 @@ const products = [
       },
     ],
   },
+  {
+    id: 5,
+    name: "Quarto 18",
+    shortDescription: "Lorem ipsum dolor sit amet",
+    price: 749,
+    imageGroups: [
+      {
+        images: [
+          {
+            link: quarto18,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 6,
+    name: "Quarto torre",
+    shortDescription: "Lorem ipsum dolor sit amet",
+    price: 599,
+    imageGroups: [
+      {
+        images: [
+          {
+            link: quartoTorre,
+          },
+        ],
+      },
+    ],
+  },
 ];
+
 
 
 export default function Home() {
