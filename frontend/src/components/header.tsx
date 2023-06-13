@@ -10,16 +10,6 @@ export default function Header({ scrollHandler }: HeaderProps) {
   return (
     <header className="relative shadow-xl overflow-hidden sm:rounded-3xl sm:overflow-visible">
       <div className="absolute inset-x-0 inset-0 blur-sm">
-        {/* <Image
-          priority
-          fill
-          className="h-full w-full object-cover"
-          src={img}
-          placeholder="blur"
-          alt="Foto da casa"
-        /> */}
-        {/* <div className="absolute inset-0 bg-orange-100 mix-blend-multiply" /> */}
-
         <video autoPlay muted loop className="h-full w-full object-cover">
           <source src="https://www.leagueoflegends.com/static/hero-de0ba45b1d0959277d12545fbb645722.mp4" type="video/mp4" />
         </video>
