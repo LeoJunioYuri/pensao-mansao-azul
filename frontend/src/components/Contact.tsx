@@ -64,10 +64,11 @@ export default function Contact() {
         <div className="grow-0 shrink-0 basis-auto w-full md:w-5/12 px-3 lg:px-6">
           <p className="font-bold mb-6">Localização</p>
           <iframe
-            src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1859.3880690356557!2d-44.992434!3d-21.2407239!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9ffd8d9aa17823%3A0x8e385990b5c510ad!2zUGVuc8OjbyBNYW5zw6NvIEF6dWw!5e0!3m2!1spt-BR!2sbr!4v1686695614335!5m2!1spt-BR!2sbr"   
             className="left-0 top-0 h-full w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg"
             frameBorder="0"
             allowFullScreen
+            loading="lazy"
           ></iframe>
         </div>
       </div>
