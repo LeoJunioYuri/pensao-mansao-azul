@@ -1,6 +1,7 @@
 import Image from "next/image";
 import img from "/public/Neuschwanstein_Castle-Germany.jpg";
 import { MouseEventHandler } from "react";
+import { Button } from "@material-tailwind/react";
 
 interface HeaderProps {
   scrollHandler: MouseEventHandler<HTMLButtonElement>;
@@ -10,18 +11,11 @@ export default function Header({ scrollHandler }: HeaderProps) {
   return (
     <header className="relative shadow-xl overflow-hidden sm:rounded-3xl sm:overflow-visible">
       <div className="absolute inset-x-0 inset-0 blur-sm">
-        {/* <Image
-          priority
-          fill
-          className="h-full w-full object-cover"
-          src={img}
-          placeholder="blur"
-          alt="Foto da casa"
-        /> */}
-        {/* <div className="absolute inset-0 bg-orange-100 mix-blend-multiply" /> */}
-
         <video autoPlay muted loop className="h-full w-full object-cover">
-          <source src="https://www.leagueoflegends.com/static/hero-de0ba45b1d0959277d12545fbb645722.mp4" type="video/mp4" />
+          <source
+            src="https://www.leagueoflegends.com/static/hero-de0ba45b1d0959277d12545fbb645722.mp4"
+            type="video/mp4"
+          />
         </video>
       </div>
       <div className="relative px-4 py-8 md:py-16 lg:py-32 sm:max-w-xl md:max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto">
@@ -37,12 +31,14 @@ export default function Header({ scrollHandler }: HeaderProps) {
         </p>
 
         <div className="mx-auto max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl flex justify-center">
-          <button
-            className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-blue-600 shadow-sm hover:bg-orange-100 sm:px-8"
+          <Button
+            variant="gradient"
+            size="lg"
+            className="mt-8"
             onClick={scrollHandler}
           >
             Ver Quartos
-          </button>
+          </Button>
         </div>
       </div>
     </header>
