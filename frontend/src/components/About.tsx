@@ -18,7 +18,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="flex flex-col sm:flex-row max-w-screen-xl mx-auto group rounded-lg border-2 border-babyBlue hover:shadow-2xl transition-all duration-300 hover:scale-104">
+      <div className="flex flex-col sm:flex-row max-w-screen-xl mx-auto group rounded-lg border-2 border-babyBlue hover:shadow-2xl dark:shadow-babyBlue transition-all duration-300 hover:scale-104">
         <div className="sm:w-1/2 lg:w-2/3 rounded relative ">
           <Link
             // href={`/blog/${featuredPost?.fields.slug}`}
@@ -59,7 +59,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="flex flex-col sm:flex-row max-w-screen-xl mx-auto mt-8 group rounded-lg border-2 border-babyBlue hover:shadow-2xl transition-all duration-300 hover:scale-104">
+      <div className="flex flex-col sm:flex-row max-w-screen-xl mx-auto mt-8 group rounded-lg border-2 border-babyBlue hover:shadow-2xl dark:shadow-babyBlue transition-all duration-300 hover:scale-104">
       {/* rounded-b-lg sm:rounded-bl-none sm:rounded-r-lg sm:border-t-2 sm:border-l-0 */}
         <div className="sm:w-1/2 lg:w-1/3 bg-gray-100 dark:bg-riverBed p-8 rounded-t-lg rounded-b-none sm:rounded-l-lg sm:rounded-r-none">
           <Link
@@ -102,7 +102,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="flex flex-col sm:flex-row max-w-screen-xl mx-auto mt-8 group rounded-lg border-2 border-babyBlue ">
+      <div className="flex flex-col sm:flex-row max-w-screen-xl mx-auto mt-8 group rounded-lg border-2 border-babyBlue hover:shadow-2xl dark:shadow-babyBlue transition-all duration-300 hover:scale-104 ">
         <div className="sm:w-1/2 lg:w-2/3 sm:rounded-t-none sm:rounded-l-lg relative">
           <Link
             // href={`/blog/${featuredPost?.fields.slug}`}

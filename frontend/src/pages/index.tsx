@@ -1,6 +1,7 @@
 import { useRef } from 'react'
 import About from '@component/components/About';
 import { Outlet } from 'react-router-dom';
+import { Button } from "@material-tailwind/react";
 
 const quarto5 = require('/public/quarto5.jpg');
 const quarto13 = require('/public/quarto13.jpg');
@@ -145,12 +146,20 @@ export default function Home() {
           ))}
         </div>
         <div className="md:py-16 mx-auto max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl flex justify-center">
-            <button
-              className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-blue-600 shadow-sm hover:bg-orange-100 sm:px-8"
+            {/* <button
+              className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-blue-600 sm:px-8 shadow-[0_1px_0_rgb(0,0,0)] hover:shadow-[0_2px_0px_rgb(0,0,0)] ease-out hover:translate-y-1 transition-all rounded"
               // onClick={}
             >
               Ver todas as opções
-            </button>
+            </button> */}
+            <Button
+            variant="gradient"
+            size="lg"
+            className="mt-8 shadow-[0_1px_0_rgb(0,0,0)] hover:shadow-[0_2px_0px_rgb(0,0,0)] bg-white ease-out hover:translate-y-1 transition-all rounded"
+            onClick={scrollHandler}
+          >
+            Ver todas as opções
+          </Button>
           </div>
       </div>
       <Perks />

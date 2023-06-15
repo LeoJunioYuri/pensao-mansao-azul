@@ -30,11 +30,11 @@ export default function Header({ scrollHandler }: HeaderProps) {
           Mais de 20 anos de tradição e qualidade
         </p>
 
-        <div className="mx-auto max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl flex justify-center">
+        <div className="mx-auto max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl flex justify-center ">
           <Button
             variant="gradient"
             size="lg"
-            className="mt-8"
+            className="mt-8 shadow-[0_1px_0_rgb(0,0,0)] hover:shadow-[0_2px_0px_rgb(0,0,0)] bg-white ease-out hover:translate-y-1 transition-all rounded"
             onClick={scrollHandler}
           >
             Ver Quartos
