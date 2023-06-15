@@ -9,7 +9,7 @@ interface HeaderProps {
 
 export default function Header({ scrollHandler }: HeaderProps) {
   return (
-    <header className="relative shadow-xl overflow-hidden sm:rounded-3xl sm:overflow-visible">
+    <header className="relative shadow-xl overflow-hidden sm:rounded-3xl sm:overflow-visible ">
       <div className="absolute inset-x-0 inset-0 blur-sm">
         <video autoPlay muted loop className="h-full w-full object-cover">
           <source
@@ -18,7 +18,7 @@ export default function Header({ scrollHandler }: HeaderProps) {
           />
         </video>
       </div>
-      <div className="relative px-4 py-8 md:py-16 lg:py-32 sm:max-w-xl md:max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto">
+      <div className="relative px-4 py-24 sm:py-32 md:py-32 lg:py-48 sm:max-w-xl md:max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto">
         <p className="text-center text-lg md:text-xl lg:text-2xl font-semibold tracking-wide mb-8 md:mb-12 lg:mb-16 mt-6 text-gray-300">
           O lugar certo para você ficar em Lavras-MG
         </p>

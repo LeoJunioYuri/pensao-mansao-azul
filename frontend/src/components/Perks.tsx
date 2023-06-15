@@ -39,7 +39,7 @@ export default function Perks() {
           >
             Quartos mobiliados com roupa de cama
           </div>
-          <div className={`px-6 pb-8 text-white dark:text-white text-center`}>
+          <div className={`px-4 sm:px-1 pb-8 text-white dark:text-white text-center`}>
             A Pensão Mansão Azul oferece quartos completamente mobiliados,
             incluindo roupa de cama. Isso proporciona conveniência e conforto
             aos residentes, pois eles não precisam se preocupar em trazer ou
@@ -74,7 +74,7 @@ export default function Perks() {
           >
             Localização próxima da UFLA, Unilavras e comércios
           </div>
-          <div className={`px-6 pb-8 text-white dark:text-white text-center`}>
+          <div className={`px-4 sm:px-1 pb-8 text-white dark:text-white text-center`}>
             A pensão está estrategicamente localizada perto da UFLA e da
             Unilavras, facilitando o deslocamento para estudantes e professores.
             Além disso, a proximidade com restaurantes, padarias e outros
@@ -101,12 +101,12 @@ export default function Perks() {
             </svg>
           </div>
           <div
-            className={`px-6 py-8 text-grey-700 dark:text-white text-center text-2xl font-bold`}
+            className={`px-2 py-8 text-grey-700 dark:text-white text-center text-2xl font-bold`}
           >
             Ambiente familiar e tranquilo para estudos, com regras de
             convivência e limpeza
           </div>
-          <div className={`px-6 pb-8 text-white dark:text-white text-center`}>
+          <div className={`px-4 sm:px-1 pb-8 text-white dark:text-white text-center`}>
             A Pensão Mansão Azul é conhecida por proporcionar um ambiente
             familiar e tranquilo, ideal para estudantes que buscam concentração
             e foco nos estudos. As regras de convivência e limpeza são
@@ -138,7 +138,7 @@ export default function Perks() {
             Aluguel inclusivo de água, luz, telefone, internet, TV a cabo e vaga
             na garagem
           </div>
-          <div className={`px-6 pb-8 text-white dark:text-white text-center`}>
+          <div className={`px-4 sm:px-1 pb-8 text-white dark:text-white text-center`}>
             O valor do aluguel já inclui serviços essenciais, como água, luz,
             telefone, internet e TV a cabo na sala. Além disso, os residentes
             têm acesso a uma vaga de garagem, proporcionando segurança e

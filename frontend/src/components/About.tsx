@@ -6,11 +6,11 @@ import img3 from "/public/vista.jpg";
 
 export default function About() {
   return (
-    <div className="relative mx-16 my-16 ">
-      <div className="sm:py-15 mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8 bg:babyBlue">
+    <div className="relative mx-16 my-8 ">
+      <div className="sm:py-15 mx-auto max-w-7xl py-8 px-4 sm:px-6 lg:px-8 bg:babyBlue">
         <div className="text-center">
           <p
-            className="mt-1 text-4xl font-bold uppercase rounded md:hover:bg-transparent md:border-0 sm:tracking-tight lg:text-5xl"
+            className="mb-2 text-4xl font-bold uppercase rounded md:hover:bg-transparent md:border-0 sm:tracking-tight lg:text-5xl"
             //ref={roomRef}
           >
             Sobre nós
