@@ -17,8 +17,9 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row max-w-screen-xl mx-auto pt-8 group">
-        <div className="sm:w-1/2 lg:w-2/3 sm:rounded-t-none sm:rounded-l-lg relative ">
+
+      <div className="flex flex-col sm:flex-row max-w-screen-xl mx-auto group">
+        <div className="sm:w-1/2 lg:w-2/3 rounded relative ">
           <Link
             // href={`/blog/${featuredPost?.fields.slug}`}
             href={""}
@@ -30,7 +31,7 @@ export default function About() {
                 src={img}
                 //alt={featuredPost.fields.image.label}
                 alt="teste"
-                className="object-cover object-center rounded-t-lg sm:rounded-l-lg sm:rounded-t-none"
+                className="object-cover object-center rounded-t-lg sm:rounded-r-none sm:rounded-l-lg"
                 fill
                 sizes="(max-width: 640px) 100vw,
                                             50vw"
@@ -59,7 +60,8 @@ export default function About() {
       </div>
 
       <div className="flex flex-col sm:flex-row max-w-screen-xl mx-auto pt-8 group">
-        <div className="sm:w-1/2 lg:w-1/3 bg-gray-100 p-8 border-2 border-t-0 rounded-b-lg sm:rounded-bl-none sm:rounded-r-lg sm:border-t-2 sm:border-l-0 relative">
+      {/* rounded-b-lg sm:rounded-bl-none sm:rounded-r-lg sm:border-t-2 sm:border-l-0 */}
+        <div className="sm:w-1/2 lg:w-1/3 bg-gray-100 p-8 border-2 border-t-0 rounded-t-lg rounded-b-none sm:rounded-l-lg sm:rounded-r-none">
           <Link
             // href={`/blog/${featuredPost.fields.slug}`}
             href={""}
@@ -89,7 +91,8 @@ export default function About() {
                 src={img2}
                 //alt={featuredPost.fields.image.label}
                 alt="teste"
-                className="rounded-t-lg sm:rounded-l-lg sm:rounded-t-none"
+                // rounded-t-lg sm:rounded-b-lg sm:rounded-t-none
+                className="rounded-b-lg rounded-t-none sm:rounded-r-lg sm:rounded-l-none"
                 fill
                 sizes="(max-width: 640px) 100vw,
                                             50vw"
@@ -112,7 +115,7 @@ export default function About() {
                 src={img3}
                 //alt={featuredPost.fields.image.label}
                 alt="teste"
-                className="object-cover object-center rounded-t-lg sm:rounded-l-lg sm:rounded-t-none"
+                className="object-cover object-center rounded-t-lg sm:rounded-r-none sm:rounded-l-lg"
                 fill
                 sizes="(max-width: 640px) 100vw,
                                             50vw"
