@@ -1,3 +1,5 @@
+'use client';
+
 import Image from "next/image";
 import img from "/public/Neuschwanstein_Castle-Germany.jpg";
 import { MouseEventHandler } from "react";

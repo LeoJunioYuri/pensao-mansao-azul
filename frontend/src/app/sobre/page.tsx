@@ -1,9 +1,8 @@
+'use client';
 //TODO: Move this to pages
+import "src/styles/globals.css";
 import React from "react";
-import Image from "next/image";
-//import ProfileImage from './profile.jpg';
-import ProfileImage from "/public/Hohenzollern-Castle.jpg";
-import PageTitle from "@component/components/page-title";
+import PageTitle from "@component/app/components/page-title";
 import {
   Button,
   Card,
@@ -12,7 +11,7 @@ import {
   Typography,
 } from "@material-tailwind/react";
 
-export default function AboutUs() {
+export default function Sobre() {
   const icons = [
     { icon: "fas fa-user", title: "Equipe" },
     { icon: "fas fa-chart-line", title: "Resultados" },
