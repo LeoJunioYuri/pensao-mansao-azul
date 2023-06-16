@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Link from "next/link"
 import Image from "next/image";
 import logo from "/public/logo-example.svg";
 import AboutUs from "../pages/AboutUs";
@@ -13,10 +13,9 @@ export default function Navbar() {
   };
   
   return (
-    <Router>
       <nav className="fixed top-0 w-full z-50 bg-navyBlue border-gray-200 dark:bg-darkNavyBlue shadow-lg">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <Link to="/" className="flex items-center">
+          <Link href="/" className="flex items-center">
             <Image src={logo} className="h-8 mr-3" alt="Logo Pensão" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               Pensão Mansão Azul
@@ -48,7 +47,7 @@ export default function Navbar() {
             <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 ">
               <li>
                 <Link
-                  to="/"
+                  href="/"
                   className="block py-2 pl-3 pr-4 text-botticelli bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
                   onClick={handleToggleNav}
                 >
@@ -58,7 +57,7 @@ export default function Navbar() {
               <li>
                 {/* <Link to={`/sobre`}>Your Name</Link> */}
                 <Link
-                  to="/sobre"
+                  href="/sobre"
                   className="block py-2 pl-3 pr-4 text-botticelli rounded hover:sail md:hover:bg-transparent md:border-0 md:hover:text-sail md:p-0 dark:text-white md:dark:hover:sail dark:hover:sail dark:hover:sail md:dark:hover:bg-transparent"
                   onClick={handleToggleNav}
                 >
@@ -95,11 +94,6 @@ export default function Navbar() {
             </ul>
           </div>
         </div>
-        <Routes>
-          {/* <Route path="/" element={<h1>Home</h1>} /> */}
-          <Route path="/sobre" element={<AboutUs />} />
-        </Routes>
       </nav>
-    </Router>
   );
 }

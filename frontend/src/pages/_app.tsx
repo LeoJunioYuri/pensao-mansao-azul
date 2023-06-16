@@ -7,20 +7,6 @@ import AboutUs from "@component/pages/AboutUs";
 import Navbar from "@component/components/Navbar";
 import Footer from "@component/components/Footer";
 
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <AboutUs />,
-//     errorElement: <ErrorPage />,
-//     children: [
-//       {
-//         path: "/sobre",
-//         element: <AboutUs />,
-//       },
-//     ],
-//   },
-// ]);
-
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     (document as any).body.classList.add("dark");
