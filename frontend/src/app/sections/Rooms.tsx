@@ -8,7 +8,7 @@ function cn(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-interface Product {
+interface Room {
   id: string | number;
   name: string;
   shortDescription: string;
@@ -21,7 +21,7 @@ interface Product {
 }
 
 
-export default function RoomCard({ product }: { product: Product }) {
+export default function RoomCard({ product }: { product: Room }) {
   
   const [isLoading, setLoading] = useState(true);
 
@@ -55,7 +55,7 @@ export default function RoomCard({ product }: { product: Product }) {
 }
 
 
-export function Rooms({ products }: { products: Product[] }) {
+export function Rooms({ products }: { products: Room[] }) {
   let roomRef = useRef<HTMLParagraphElement | null>(null);
   return (
     <>
@@ -70,7 +70,7 @@ export function Rooms({ products }: { products: Product[] }) {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+        <div className="grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
           {products.map((product) => (
             <RoomCard product={product} key={product.id} />
           ))}

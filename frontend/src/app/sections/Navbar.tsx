@@ -66,13 +66,13 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                href="/quartos"
                 className="block py-2 pl-3 pr-4 text-botticelli rounded hover:sail md:hover:bg-transparent md:border-0 md:hover:text-sail md:p-0 dark:text-white md:dark:hover:sail dark:hover:sail dark:hover:sail md:dark:hover:bg-transparent"
                 onClick={handleToggleNav}
               >
                 Quartos
-              </a>
+              </Link>
             </li>
             <li>
               <a

@@ -12,7 +12,7 @@ const quarto16 = require('/public/quarto16.jpg');
 const quartoTorre = require('/public/quarto-torre.jpg');
 const quarto18 = require('/public/quarto18.jpg');
 
-const products = [
+const topRooms = [
   {
     id: 1,
     name: "Quarto 5",
@@ -110,7 +110,7 @@ export default function Home() {
     <>
       <Header />
       <About />
-      <Rooms products={products} />
+      <Rooms products={topRooms} />
       <Perks />
       <Contact />
     </>
