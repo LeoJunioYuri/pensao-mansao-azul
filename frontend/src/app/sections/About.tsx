@@ -47,7 +47,7 @@ export default function About() {
             className="cursor-pointer"
           >
             <div className="border-b-2 border-primary-500 w-12 border-babyBlue"></div>
-            <h2 className="font-display text-secondary-500 mt-1 text-gray-600 dark:text-babyBlue text-2xl group-hover:text-primary-700 transition duration-300">
+            <h2 className="font-display text-secondary-500 mt-1 text-riverBed dark:text-babyBlue text-2xl group-hover:text-primary-700 transition duration-300">
               {/* {featuredPost.fields.title} */}
               Ambiente seguro e familiar
             </h2>
@@ -69,7 +69,7 @@ export default function About() {
             className="cursor-pointer"
           >
             <div className="border-b-2 border-primary-500 w-12 border-babyBlue"></div>
-            <h2 className="font-display text-secondary-500 mt-1 text-gray-600 dark:text-babyBlue text-2xl group-hover:text-primary-500 transition duration-300">
+            <h2 className="font-display text-secondary-500 mt-1 text-riverBed dark:text-babyBlue text-2xl group-hover:text-primary-500 transition duration-300">
               {/* {featuredPost.fields.title} */}
               Quartos e suítes individuais mobiliados
             </h2>
@@ -131,7 +131,7 @@ export default function About() {
             className="cursor-pointer"
           >
             <div className="border-b-2 border-primary-500 w-12 border-babyBlue"></div>
-            <h2 className="font-display text-secondary-500 mt-1 text-gray-600 dark:text-babyBlue text-2xl group-hover:text-primary-500 transition duration-300">
+            <h2 className="font-display text-secondary-500 mt-1 text-riverBed dark:text-babyBlue text-2xl group-hover:text-primary-500 transition duration-300">
               {/* {featuredPost.fields.title} */}
               Localização privilegiada
             </h2>

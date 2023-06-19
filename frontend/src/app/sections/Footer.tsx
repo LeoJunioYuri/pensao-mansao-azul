@@ -8,7 +8,7 @@ export default function Footer() {
   const sourceCodeUrl = 'https://github.com/LeoJunioYuri/pensao-mansao-azul';
 
   return (
-    <footer className="center mt-5 flex justify-center space-x-4 dark:bg-slate-80 bg-navyBlue dark:bg-darkNavyBlue dark:text-white p-4 text-xs">
+    <footer className="center mt-5 flex justify-center space-x-4 bg-navyBlue dark:bg-darkNavyBlue text-white p-4 text-xs">
     {/* <footer className="bg-navyBlue dark:bg-darkNavyBlue dark:text-slate-400 center mt-5 flex justify-center space-x-4 p-4 text-xs"> */}
       <p>Desenvolvido por Leonardo Basso</p>
       <span>|</span>

@@ -12,7 +12,7 @@ export default function Contact() {
         <div className="flex flex-wrap">
           <div className="grow-0 shrink-0 basis-auto mb-12 md:mb-0 w-full md:w-7/12 px-3 lg:px-6">
             <h2 className="text-3xl font-bold mb-2">Pensão Mansão Azul</h2>
-            <p className="font-bold text-gray-400  mb-6">Agende já sua visita!</p>
+            <p className="font-bold text-riverBed dark:text-gray-400  mb-6">Agende já sua visita!</p>
   
             <p className="font-bold">Endereço</p>
   
