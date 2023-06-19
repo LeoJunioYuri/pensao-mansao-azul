@@ -1,8 +1,9 @@
-'use client'
+"use client";
 import Image from "next/image";
 // import img from "/public/Neuschwanstein_Castle-Germany.jpg";
 // import { MouseEventHandler } from "react";
 import { Button } from "@material-tailwind/react";
+import Link from "next/link";
 
 // interface HeaderProps {
 //   scrollHandler: MouseEventHandler<HTMLButtonElement>;
@@ -39,7 +40,7 @@ export default function Header() {
             className="mt-8 shadow-[0_1px_0_rgb(0,0,0)] hover:shadow-[0_2px_0px_rgb(0,0,0)] bg-white ease-out hover:translate-y-1 transition-all rounded"
             // onClick={scrollHandler}
           >
-            Ver Quartos
+            <Link href="/quartos">Ver Quartos</Link>
           </Button>
         </div>
       </div>

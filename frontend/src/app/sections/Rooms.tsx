@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@material-tailwind/react";
@@ -20,9 +20,7 @@ interface Room {
   }[];
 }
 
-
 export default function RoomCard({ product }: { product: Room }) {
-  
   const [isLoading, setLoading] = useState(true);
 
   return (
@@ -54,7 +52,6 @@ export default function RoomCard({ product }: { product: Room }) {
   );
 }
 
-
 export function Rooms({ products }: { products: Room[] }) {
   let roomRef = useRef<HTMLParagraphElement | null>(null);
   return (
@@ -76,22 +73,22 @@ export function Rooms({ products }: { products: Room[] }) {
           ))}
         </div>
         <div className="md:py-16 mx-auto max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl flex justify-center">
-            {/* <button
+          {/* <button
               className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-blue-600 sm:px-8 shadow-[0_1px_0_rgb(0,0,0)] hover:shadow-[0_2px_0px_rgb(0,0,0)] ease-out hover:translate-y-1 transition-all rounded"
               // onClick={}
             >
               Ver todas as opções
             </button> */}
-            <Button
+          <Button
             variant="gradient"
             size="lg"
             className="mt-8 shadow-[0_1px_0_rgb(0,0,0)] hover:shadow-[0_2px_0px_rgb(0,0,0)] bg-white ease-out hover:translate-y-1 transition-all rounded"
             //onClick={scrollHandler}
           >
-            Ver todas as opções
+            <Link href="/quartos">Ver todas as opções</Link>
           </Button>
-          </div>
+        </div>
       </div>
     </>
-  )
+  );
 }
