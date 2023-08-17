@@ -1,7 +1,7 @@
 'use client'
 import Link from "next/link";
 import Image from "next/image";
-import img from "/public/casa-frente-2.jpg";
+import img from "/public/casa-frente-3.jpg";
 import img2 from "/public/quarto6.jpg";
 import img3 from "/public/vista.jpg";
 
@@ -26,8 +26,6 @@ export default function About() {
                 alt="foto da frente da casa"
                 className="object-cover object-center rounded-t-lg sm:rounded-r-none sm:rounded-l-lg"
                 fill
-                sizes="(max-width: 640px) 100vw,
-                                            50vw"
               />
             </div>
         </div>
