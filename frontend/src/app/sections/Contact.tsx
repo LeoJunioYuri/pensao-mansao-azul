@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <section id="contato" className="mb-32 mx-16 text-white-800">
+    <section id="contato" className="mb-32 mx-4 lg:mx-14 text-white-800">
       <div className="text-center">
         <p
           className="mt-1 text-4xl my-16 md:my-24 underline underline-offset-8 md:no-underline font-bold uppercase rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700sm:text-5xl sm:tracking-tight lg:text-5xl"

@@ -7,7 +7,7 @@ import img3 from "/public/vista.jpg";
 
 export default function About() {
   return (
-    <div className="relative mx-16 my-8 ">
+    <div className="relative mx-4 lg:mx-14 my-8 ">
       <div className="sm:py-15 mx-auto max-w-7xl py-8 px-4 sm:px-6 lg:px-8 bg:babyBlue">
         <div className="text-center">
           <p

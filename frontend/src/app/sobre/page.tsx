@@ -37,8 +37,8 @@ export default function Sobre() {
 
   return (
     <>
-      <section>
-        <div className="mx-auto max-w-screen-md py-32 bg-fixed overflow-hidden">
+      <section className="mx-4 lg:mx-14">
+        <div className="max-w-screen-md py-32 bg-fixed overflow-hidden">
           <h2 className="mx-auto w-full px-4 text-center lg:w-6/12 blue-gray dark:text-slate-400 text-5xl font-semibold">
             Sobre Nós
           </h2>
