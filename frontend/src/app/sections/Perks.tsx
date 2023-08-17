@@ -9,7 +9,7 @@ export default function Perks() {
   // const textColor = "text-white dark:text-white";
 
   return (
-    <section className="mx-16">
+    <section id="perks" className="mx-16">
       <div className="text-center">
         <p className="mt-1 text-4xl my-16 font-bold uppercase rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700sm:text-5xl sm:tracking-tight lg:text-5xl">
           Vantagens
