@@ -56,7 +56,7 @@ export function Rooms({ products }: { products: Room[] }) {
   let roomRef = useRef<HTMLParagraphElement | null>(null);
   return (
     <>
-      <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 my-16">
+      <div id="quartos" className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 my-16">
         <div className="sm:py-15 mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <p

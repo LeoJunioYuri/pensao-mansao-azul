@@ -76,7 +76,7 @@ export default function Navbar() {
             </li>
             <li>
               <a
-                href="/#perks"
+                href="/#vantagens"
                 className="block py-2 pl-3 pr-4 text-botticelli rounded hover:sail md:hover:bg-transparent md:border-0 md:hover:text-sail md:p-0 dark:text-white md:dark:hover:sail dark:hover:sail dark:hover:sail md:dark:hover:bg-transparent"
                 onClick={handleToggleNav}
               >
@@ -85,7 +85,7 @@ export default function Navbar() {
             </li>
             <li>
               <a
-                href="/#contact"
+                href="/#contato"
                 className="block py-2 pl-3 pr-4 text-botticelli rounded hover:sail md:hover:bg-transparent md:border-0 md:hover:text-sail md:p-0 dark:text-white md:dark:hover:sail dark:hover:sail dark:hover:sail md:dark:hover:bg-transparent"
                 onClick={handleToggleNav}
               >
