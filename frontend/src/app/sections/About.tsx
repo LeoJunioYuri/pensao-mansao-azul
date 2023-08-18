@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image";
-import img from "/public/casa-frente-3.jpg";
+import img from "/public/casa-frente-0.jpg";
 import img2 from "/public/quarto6.jpg";
 import img3 from "/public/vista.jpg";
 
