@@ -1,12 +1,7 @@
 import React from "react";
-import Image from "next/image";
 
 export default function Perks() {
-  // Perks({ isDarkMode })
-  //const bgColor = isDarkMode ? "bg-navy" : "bg-white";
-  //const textColor = isDarkMode ? "text-white" : "text-white";
   const bgColor = "bg-navy";
-  // const textColor = "text-white dark:text-white";
 
   return (
     <section id="vantagens" className="mx-4 lg:mx-14">

@@ -37,7 +37,6 @@ export default function Navbar() {
             <Bars3Icon className="w-6 h-6" />
           )}
         </button>
-        {/* <div className="hidden w-full md:block md:w-auto" id="navbar-default"> */}
         <div
           className={`${
             openNav ? "block" : "hidden"
@@ -56,7 +55,6 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              {/* <Link to={`/sobre`}>Your Name</Link> */}
               <Link
                 href="/sobre"
                 className="block py-2 pl-3 pr-4 text-botticelli rounded hover:sail md:hover:bg-transparent md:border-0 md:hover:text-sail md:p-0 dark:text-white md:dark:hover:sail dark:hover:sail dark:hover:sail md:dark:hover:bg-transparent"

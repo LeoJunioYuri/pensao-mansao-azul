@@ -42,8 +42,6 @@ export default function RoomCard({ product }: { product: Room }) {
       </div>
       <div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
         <h3>{product.name}</h3>
-        {/* avaliar uso de preço */}
-        {/* <p>R${product.price}</p> */}
       </div>
       <p className="mt-1 text-sm italic text-gray-500">
         {product.shortDescription}
@@ -73,17 +71,10 @@ export function Rooms({ products }: { products: Room[] }) {
           ))}
         </div>
         <div className="md:py-16 mx-auto max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl flex justify-center">
-          {/* <button
-              className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-blue-600 sm:px-8 shadow-[0_1px_0_rgb(0,0,0)] hover:shadow-[0_2px_0px_rgb(0,0,0)] ease-out hover:translate-y-1 transition-all rounded"
-              // onClick={}
-            >
-              Ver todas as opções
-            </button> */}
           <Button
             variant="gradient"
             size="lg"
             className="mt-8 shadow-[0_1px_0_rgb(0,0,0)] hover:shadow-[0_2px_0px_rgb(0,0,0)] bg-white ease-out hover:translate-y-1 transition-all rounded"
-            //onClick={scrollHandler}
           >
             <Link href="/quartos">Ver todas as opções</Link>
           </Button>

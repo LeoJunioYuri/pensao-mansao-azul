@@ -4,7 +4,6 @@ export default function Contact() {
       <div className="text-center">
         <p
           className="mt-1 text-4xl my-16 md:my-24 underline underline-offset-8 md:no-underline font-bold uppercase rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700sm:text-5xl sm:tracking-tight lg:text-5xl"
-          // ref={roomRef}
         >
           Contato
         </p>
@@ -17,10 +16,6 @@ export default function Contact() {
           </p>
 
           <p className="font-bold">Endereço</p>
-
-          {/* <p className="text-gray-500 mb-6 underline underline-offset-4">
-              Rua Mariana Botelho dos Santos, 43 - Lavras, Minas Gerais
-            </p> */}
           <p className="text-gray-500 mb-6">
             <a
               href="https://www.google.com.br/maps/place/Pens%C3%A3o+Mans%C3%A3o+Azul/@-21.2394536,-44.9900948,17z/data=!4m6!3m5!1s0x9ffd8d9aa17823:0x8e385990b5c510ad!8m2!3d-21.2407649!4d-44.9915778!16s%2Fg%2F11c1vksrs6?entry=ttu"

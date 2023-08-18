@@ -9,7 +9,6 @@ export default function Footer() {
 
   return (
     <footer className="center mt-5 flex justify-center space-x-4 bg-navyBlue dark:bg-darkNavyBlue text-white p-4 text-xs">
-    {/* <footer className="bg-navyBlue dark:bg-darkNavyBlue dark:text-slate-400 center mt-5 flex justify-center space-x-4 p-4 text-xs"> */}
       <p>Desenvolvido por Leonardo Basso</p>
       <span>|</span>
       <a href={linkedInUrl} className={linkStyles} target="_blank" rel="noopener noreferrer">
