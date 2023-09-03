@@ -64,7 +64,7 @@ export default function Perks() {
             </svg>
           </div>
           <div
-            className={`px-6 py-8 text-grey-700 dark:text-white text-center text-2xl font-bold`}
+            className="px-6 py-8 text-riverBed dark:text-white text-center text-2xl font-bold"
           >
             Localização próxima da UFLA, Unilavras e comércios
           </div>
@@ -95,7 +95,7 @@ export default function Perks() {
             </svg>
           </div>
           <div
-            className={`px-2 py-8 text-grey-700 dark:text-white text-center text-2xl font-bold`}
+            className={`px-2 py-8 text-riverBed dark:text-white text-center text-2xl font-bold`}
           >
             Ambiente familiar e tranquilo para estudos, com regras de
             convivência e limpeza
@@ -127,7 +127,7 @@ export default function Perks() {
             </svg>
           </div>
           <div
-            className={`px-6 py-8 text-grey-700 dark:text-white text-center text-2xl font-bold`}
+            className={`px-6 py-8 text-riverBed dark:text-white text-center text-2xl font-bold`}
           >
             Aluguel inclusivo de água, luz, telefone, internet, TV a cabo e vaga
             na garagem

@@ -65,7 +65,7 @@ export function Rooms({ products }: { products: Room[] }) {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+        <div className="grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8 text-riverBed">
           {products.map((product) => (
             <RoomCard product={product} key={product.id} />
           ))}

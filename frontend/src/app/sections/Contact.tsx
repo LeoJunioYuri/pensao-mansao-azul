@@ -36,7 +36,7 @@ export default function Contact() {
               rel="noopener noreferrer"
               className="underline underline-offset-4"
             >
-              (35) 9 99944-0891
+              (35) 9 9944-0891
             </a>
           </p>
 
