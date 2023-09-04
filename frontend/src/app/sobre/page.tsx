@@ -79,7 +79,7 @@ export default function Sobre() {
           <Typography variant="h2" color="blue-gray" className="mb-2 mx-auto">
             O Lugar Perfeito para Estudantes e Profissionais em Lavras
           </Typography>
-          <Typography color="text-riverBed" className="font-normal">
+          <Typography color="blue-gray" className="font-normal">
             A Pensão Mansão Azul, popularmente conhecida como Mansão dos
             Estudantes, oferece quartos, suítes e flats completamente
             mobiliados.
