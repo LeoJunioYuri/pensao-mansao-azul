@@ -11,13 +11,39 @@ const quarto15 = require('/public/quarto15.jpg');
 const quarto16 = require('/public/quarto16.jpg');
 const quartoTorre = require('/public/quarto-torre.jpg');
 const quarto18 = require('/public/quarto18.jpg');
+const sala4 = require('/public/sala4andar.jpeg');
+const salaEstar = require('/public/sala.jpg');;
 
 const topRooms = [
   {
     id: 1,
+    name: "Sala 4 andar",
+    imageGroups: [
+      {
+        images: [
+          {
+            link: sala4,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "Sala de estar",
+    imageGroups: [
+      {
+        images: [
+          {
+            link: salaEstar,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 3,
     name: "Quarto 5",
-    shortDescription: "Lorem ipsum dolor sit amet",
-    price: 549,
     imageGroups: [
       {
         images: [
@@ -29,25 +55,8 @@ const topRooms = [
     ],
   },
   {
-    id: 2,
-    name: "Quarto 13",
-    shortDescription: "Lorem ipsum dolor sit amet",
-    price: 1099,
-    imageGroups: [
-      {
-        images: [
-          {
-            link: quarto13,
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: 3,
+    id: 4,
     name: "Quarto 15",
-    shortDescription: "Lorem ipsum dolor sit amet",
-    price: 799,
     imageGroups: [
       {
         images: [
@@ -59,10 +68,8 @@ const topRooms = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     name: "Quarto 16",
-    shortDescription: "Lorem ipsum dolor sit amet",
-    price: 749,
     imageGroups: [
       {
         images: [
@@ -74,10 +81,8 @@ const topRooms = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     name: "Quarto 18",
-    shortDescription: "Lorem ipsum dolor sit amet",
-    price: 749,
     imageGroups: [
       {
         images: [
@@ -89,10 +94,8 @@ const topRooms = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     name: "Quarto torre",
-    shortDescription: "Lorem ipsum dolor sit amet",
-    price: 599,
     imageGroups: [
       {
         images: [

@@ -12,7 +12,7 @@ interface Room {
   id: string | number;
   name: string;
   // shortDescription: string;
-  price: number;
+  // price: number;
   imageGroups: {
     images: {
       link: string;
