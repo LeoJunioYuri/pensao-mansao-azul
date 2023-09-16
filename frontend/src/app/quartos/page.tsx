@@ -3,19 +3,86 @@ import "src/app/globals.css";
 import React from "react";
 import RoomCard from "../sections/Rooms";
 
+const quarto1 = require("/public/quarto1.jpeg");
+const quarto2 = require("/public/quarto2.jpeg");
+const quarto3 = require("/public/quarto3.jpeg");
+const quarto4 = require("/public/quarto4.jpeg");
 const quarto5 = require("/public/quarto5.jpg");
-const quarto13 = require("/public/quarto13.jpg");
+const quarto6 = require("/public/quarto6.jpg");
+// const quarto7 = require("/public/quarto7.jpg");
+// const quarto8 = require("/public/quarto8.jpg");
+// const quarto9 = require("/public/quarto9.jpg");
 const quarto15 = require("/public/quarto15.jpg");
 const quarto16 = require("/public/quarto16.jpg");
-const quartoTorre = require("/public/quarto-torre.jpg");
+// const quarto17 = require("/public/quarto17.jpg");
 const quarto18 = require("/public/quarto18.jpg");
+// const quarto19 = require("/public/quarto19.jpg");
+const quarto20 = require("/public/quarto20.jpeg");
+const quarto21 = require("/public/quarto21.jpeg");
+const quarto22 = require("/public/quarto22.jpeg");
+const quartoTorre = require("/public/quarto-torre.jpg");
 
 export default function Quartos() {
   const allRooms = [
     {
       id: 1,
+      name: "Quarto 1",
+      price: 549,
+      imageGroups: [
+        {
+          images: [
+            {
+              link: quarto1,
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 2,
+      name: "Suíte 2",
+      price: 549,
+      imageGroups: [
+        {
+          images: [
+            {
+              link: quarto2,
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 3,
+      name: "Quarto 3",
+      price: 549,
+      imageGroups: [
+        {
+          images: [
+            {
+              link: quarto3,
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 4,
+      name: "Quarto 4",
+      price: 549,
+      imageGroups: [
+        {
+          images: [
+            {
+              link: quarto4,
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 5,
       name: "Quarto 5",
-      shortDescription: "Lorem ipsum dolor sit amet",
       price: 549,
       imageGroups: [
         {
@@ -28,24 +95,22 @@ export default function Quartos() {
       ],
     },
     {
-      id: 2,
-      name: "Quarto 13",
-      shortDescription: "Lorem ipsum dolor sit amet",
+      id: 6,
+      name: "Quarto 6",
       price: 1099,
       imageGroups: [
         {
           images: [
             {
-              link: quarto13,
+              link: quarto6,
             },
           ],
         },
       ],
     },
     {
-      id: 3,
-      name: "Quarto 15",
-      shortDescription: "Lorem ipsum dolor sit amet",
+      id: 7,
+      name: "Quarto 7",
       price: 799,
       imageGroups: [
         {
@@ -58,9 +123,8 @@ export default function Quartos() {
       ],
     },
     {
-      id: 4,
-      name: "Quarto 16",
-      shortDescription: "Lorem ipsum dolor sit amet",
+      id: 8,
+      name: "Quarto 8",
       price: 749,
       imageGroups: [
         {
@@ -73,9 +137,8 @@ export default function Quartos() {
       ],
     },
     {
-      id: 5,
-      name: "Quarto 18",
-      shortDescription: "Lorem ipsum dolor sit amet",
+      id: 9,
+      name: "Quarto 9",
       price: 749,
       imageGroups: [
         {
@@ -88,9 +151,117 @@ export default function Quartos() {
       ],
     },
     {
-      id: 6,
+      id: 10,
+      name: "Quarto 15",
+      price: 599,
+      imageGroups: [
+        {
+          images: [
+            {
+              link: quarto15,
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 11,
+      name: "Quarto 16",
+      price: 599,
+      imageGroups: [
+        {
+          images: [
+            {
+              link: quarto16,
+            },
+          ],
+        },
+      ],
+    },
+    // {
+    //   id: 12,
+    //   name: "Quarto 17",      //   price: 599,
+    //   imageGroups: [
+    //     {
+    //       images: [
+    //         {
+    //           link: quarto17,
+    //         },
+    //       ],
+    //     },
+    //   ],
+    // },
+    // {
+    //   id: 13,
+    //   name: "Quarto 18",      //   price: 599,
+    //   imageGroups: [
+    //     {
+    //       images: [
+    //         {
+    //           link: quarto18,
+    //         },
+    //       ],
+    //     },
+    //   ],
+    // },
+    // {
+    //   id: 14,
+    //   name: "Quarto 19",      //   price: 599,
+    //   imageGroups: [
+    //     {
+    //       images: [
+    //         {
+    //           link: quarto19,
+    //         },
+    //       ],
+    //     },
+    //   ],
+    // },
+    {
+      id: 15,
+      name: "Quarto 20",
+      price: 599,
+      imageGroups: [
+        {
+          images: [
+            {
+              link: quarto20,
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 16,
+      name: "Quarto 21",
+      price: 599,
+      imageGroups: [
+        {
+          images: [
+            {
+              link: quarto21,
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 17,
+      name: "Quarto 22",
+      price: 599,
+      imageGroups: [
+        {
+          images: [
+            {
+              link: quarto22,
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 18,
       name: "Quarto torre",
-      shortDescription: "Lorem ipsum dolor sit amet",
       price: 599,
       imageGroups: [
         {
@@ -102,81 +273,6 @@ export default function Quartos() {
         },
       ],
     },
-    {
-        id: 7,
-        name: "Quarto torre",
-        shortDescription: "Lorem ipsum dolor sit amet",
-        price: 599,
-        imageGroups: [
-          {
-            images: [
-              {
-                link: quartoTorre,
-              },
-            ],
-          },
-        ],
-      },
-      {
-        id: 8,
-        name: "Quarto torre",
-        shortDescription: "Lorem ipsum dolor sit amet",
-        price: 599,
-        imageGroups: [
-          {
-            images: [
-              {
-                link: quartoTorre,
-              },
-            ],
-          },
-        ],
-      },
-      {
-        id: 9,
-        name: "Quarto torre",
-        shortDescription: "Lorem ipsum dolor sit amet",
-        price: 599,
-        imageGroups: [
-          {
-            images: [
-              {
-                link: quartoTorre,
-              },
-            ],
-          },
-        ],
-      },
-      {
-        id: 10,
-        name: "Quarto torre",
-        shortDescription: "Lorem ipsum dolor sit amet",
-        price: 599,
-        imageGroups: [
-          {
-            images: [
-              {
-                link: quartoTorre,
-              },
-            ],
-          },
-        ],
-      },
-      {
-        id:11,
-        name: "Quarto torre",
-        shortDescription: "Lorem ipsum dolor sit amet",
-        price: 599,
-        imageGroups: [
-          {
-            images: [
-              {
-                link: quartoTorre,
-              },
-            ],
-          },
-        ],
-      },
   ];
 
   return (
