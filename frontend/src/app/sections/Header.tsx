@@ -2,7 +2,7 @@
 import { Button } from "@material-tailwind/react";
 
 //import videoHeader from "../../../public/droneMansaoAzul.mp4";
-import videoHeader from '../../../public/droneMansaoAzul.mp4';
+// import videoHeader from '../../../public/droneMansaoAzul.mp4';
 
 export default function Header() {
   return (
@@ -10,7 +10,7 @@ export default function Header() {
       <div className="absolute inset-x-0 inset-0 blur-sm">
         <video autoPlay muted loop className="h-full w-full object-cover">
           <source
-            src={videoHeader}
+            src={require('../../../public/droneMansaoAzul.mp4')}
             type="video/mp4"
           />
         </video>
