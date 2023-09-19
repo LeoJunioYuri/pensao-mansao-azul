@@ -1,13 +1,16 @@
 "use client";
 import { Button } from "@material-tailwind/react";
 
+//import videoHeader from "../../../public/droneMansaoAzul.mp4";
+import videoHeader from '../../../public/droneMansaoAzul.mp4';
+
 export default function Header() {
   return (
     <header className="relative shadow-xl overflow-hidden sm:rounded-3xl sm:overflow-visible ">
       <div className="absolute inset-x-0 inset-0 blur-sm">
         <video autoPlay muted loop className="h-full w-full object-cover">
           <source
-            src="https://www.leagueoflegends.com/static/hero-de0ba45b1d0959277d12545fbb645722.mp4"
+            src={videoHeader}
             type="video/mp4"
           />
         </video>
