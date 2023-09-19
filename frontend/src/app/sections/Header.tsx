@@ -7,7 +7,7 @@ import { Button } from "@material-tailwind/react";
 export default function Header() {
   return (
     <header className="relative shadow-xl overflow-hidden sm:rounded-3xl sm:overflow-visible ">
-      <div className="absolute inset-x-0 inset-0 blur-sm">
+      <div className="absolute inset-x-0 inset-0 blur-[1px]">
         <video autoPlay muted loop className="h-full w-full object-cover">
           <source
             src={require('../../../public/droneMansaoAzul.mp4')}
