@@ -1,6 +1,7 @@
 "use client";
 // import type { Metadata } from "next";
 import { useEffect, useState } from "react";
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from "./sections/Navbar";
 import Footer from './sections/Footer'
 // These styles apply to every route in the application
@@ -44,6 +45,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
