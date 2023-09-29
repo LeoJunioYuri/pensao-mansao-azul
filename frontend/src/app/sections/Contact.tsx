@@ -44,10 +44,10 @@ export default function Contact() {
           <p className="font-bold">E-mail</p>
           <p className="text-gray-500 mb-6">
             <a
-              href="mailto:email@gmail.com"
+              href="mailto:rsguarnier@hotmail.com"
               className="underline underline-offset-4"
             >
-              email@gmail.com
+              rsguarnier@hotmail.com
             </a>
           </p>
 
