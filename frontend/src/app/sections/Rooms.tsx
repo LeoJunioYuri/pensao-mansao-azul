@@ -61,7 +61,7 @@ export function Rooms({ products }: { products: Room[] }) {
               className="mt-1 text-4xl font-bold uppercase rounded hover:babyBlue md:hover:bg-transparent md:border-0 md:hover:babyBlue sm:text-5xl sm:tracking-tight lg:text-5xl"
               ref={roomRef}
             >
-              Veja nossas opções de estadia
+              Veja nossas acomodações
             </p>
           </div>
         </div>
@@ -76,7 +76,7 @@ export function Rooms({ products }: { products: Room[] }) {
             size="lg"
             className="mt-8 shadow-[0_1px_0_rgb(0,0,0)] hover:shadow-[0_2px_0px_rgb(0,0,0)] bg-white ease-out hover:translate-y-1 transition-all rounded"
           >
-            <Link href="/quartos">Ver todas as opções</Link>
+            <Link href="/quartos">Ver todos os quartos</Link>
           </Button>
         </div>
       </div>

@@ -33,7 +33,7 @@ export default function Header() {
             size="lg"
             className="mt-8 shadow-[0_1px_0_rgb(0,0,0)] hover:shadow-[0_2px_0px_rgb(0,0,0)] bg-white ease-out hover:translate-y-1 transition-all rounded"
           >
-            <a href="/#quartos">Ver Quartos</a>
+            <a href="/#quartos">Ver Acomodações</a>
           </Button>
         </div>
       </div>
