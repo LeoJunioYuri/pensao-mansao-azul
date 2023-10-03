@@ -10,7 +10,7 @@ export default function Header() {
       <div className="absolute inset-x-0 inset-0 blur-[1px]">
         <video autoPlay muted loop className="h-full w-full object-cover">
           <source
-            src={require('../../../public/droneMansaoAzul.mp4')}
+            src={require('../../../public/droneMansaoAzul540p.mp4')}
             type="video/mp4"
           />
         </video>
