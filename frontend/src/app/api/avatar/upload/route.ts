@@ -16,19 +16,18 @@ export async function POST(request: Request): Promise<NextResponse> {
  
         // ⚠️ Authenticate users before generating the token.
         // Otherwise, you're allowing anonymous uploads.
-        const { user } = await auth(request);
-        const userCanUpload = canUpload(user, pathname);
-        if (!userCanUpload) {
-          throw new Error('Not authorized');
-        }
+        // const { user } = await auth(request);
+        // const userCanUpload = canUpload(user, pathname);
+        // if (!userCanUpload) {
+        //   throw new Error('Not authorized');
+        // }
  
         return {
           allowedContentTypes: ['image/jpeg', 'image/png', 'image/gif', 'video/mp4'],
-          tokenPayload: JSON.stringify({
-            // optional, sent to your server on upload completion
-            userId: user.id,
-          }),
-          token: 'w0CH9TEV6e18uUxZ8VncfGqm', // YOUR TOKEN GOES HERE
+        //   tokenPayload: JSON.stringify({
+        //     // optional, sent to your server on upload completion
+        //     userId: user.id,
+        //   }),
         };
       },
       onUploadCompleted: async ({ blob, tokenPayload }) => {
@@ -47,6 +46,8 @@ export async function POST(request: Request): Promise<NextResponse> {
         }
       },
     });
+
+    
  
     return NextResponse.json(jsonResponse);
   } catch (error) {
