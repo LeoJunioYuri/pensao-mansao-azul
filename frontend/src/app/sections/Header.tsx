@@ -9,10 +9,7 @@ export default function Header() {
     <header className="relative shadow-xl overflow-hidden sm:rounded-3xl sm:overflow-visible ">
       <div className="absolute inset-x-0 inset-0 blur-[1px]">
         <video autoPlay muted loop className="h-full w-full object-cover">
-          <source
-            src={require('../../../public/droneMansaoAzul540p.mp4')}
-            type="video/mp4"
-          />
+        <source src="https://res.cloudinary.com/dff8nl6lq/video/upload/v1696781227/DroneMansaoAzul_jqwemd.mp4" type="video/mp4" />
         </video>
       </div>
       <div className="relative px-4 py-24 sm:py-32 md:py-32 lg:py-48 sm:max-w-xl md:max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto">
