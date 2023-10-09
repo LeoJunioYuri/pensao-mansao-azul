@@ -39,7 +39,7 @@ export default function Header() {
   return (
     <header className="relative shadow-xl overflow-hidden sm:rounded-3xl sm:overflow-visible ">
               <div className="absolute inset-x-0 inset-0">
-          <video autoPlay muted loop className="h-full w-full object-cover">
+          <video autoPlay playsInline muted loop className="h-full w-full object-cover">
             <source
               src="https://res.cloudinary.com/dff8nl6lq/video/upload/f_auto:video,q_auto/DroneMansaoAzul_jqwemd"
               type="video/mp4"
