@@ -12,17 +12,19 @@ const quarto16 = require('/public/quarto16.jpg');
 const quartoTorre = require('/public/quarto-torre.jpg');
 const quarto18 = require('/public/quarto18.jpg');
 const sala4 = require('/public/sala4andar.jpeg');
-const salaEstar = require('/public/sala.jpg');;
+const salaEstar = require('/public/sala.jpg');
+const vistaAerea = require('/public/vistaAerea.jpg');
+const casaDrone = require('/public/casaDrone.jpg');
 
 const topRooms = [
   {
     id: 1,
-    name: "Sala 4 andar",
+    name: "Pensão Mansão Azul",
     imageGroups: [
       {
         images: [
           {
-            link: sala4,
+            link: casaDrone,
           },
         ],
       },
@@ -30,12 +32,12 @@ const topRooms = [
   },
   {
     id: 2,
-    name: "Sala de estar",
+    name: "Sala 4 andar",
     imageGroups: [
       {
         images: [
           {
-            link: salaEstar,
+            link: sala4,
           },
         ],
       },
@@ -56,12 +58,12 @@ const topRooms = [
   },
   {
     id: 4,
-    name: "Quarto 15",
+    name: "Vista aérea",
     imageGroups: [
       {
         images: [
           {
-            link: quarto15,
+            link: vistaAerea,
           },
         ],
       },

@@ -1,58 +1,44 @@
 "use client";
-import { useMediaQuery } from "react-responsive";
+// import { useMediaQuery } from "react-responsive";
+// import Image from "next/image";
 import { Button } from "@material-tailwind/react";
+// import img from "/public/frenteCasaDrone.jpg";
 //import videoHeader from "../../../public/droneMansaoAzul.mp4";
 // import videoHeader from '../../../public/droneMansaoAzul.mp4';
 
 export default function Header() {
-  const isDesktopOrLaptop = useMediaQuery({
-    query: "(min-width: 1224px)",
-  });
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+  // const isDesktopOrLaptop = useMediaQuery({
+  //   query: "(min-width: 1224px)",
+  // });
+  // const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+
+  // {isDesktopOrLaptop && (
+  //   <div className="absolute inset-x-0 inset-0">
+  //     <video autoPlay muted loop className="h-full w-full object-cover">
+  //       <source
+  //         src="https://res.cloudinary.com/dff8nl6lq/video/upload/v1696781227/DroneMansaoAzul_jqwemd.mp4"
+  //         type="video/mp4"
+  //       />
+  //     </video>
+  //   </div>
+  // )}
+  // {isTabletOrMobile && (
+  //   <div className="absolute inset-x-0 inset-0">
+  //     <Image
+  //       priority
+  //       fill
+  //       className="h-full w-full object-cover"
+  //       src={img}
+  //       alt="Foto da casa"
+  //     />
+  //     {/* <div className="absolute inset-0 bg-orange-100 mix-blend-multiply" /> */}
+  //   </div>
+  // )}
+
+
   return (
     <header className="relative shadow-xl overflow-hidden sm:rounded-3xl sm:overflow-visible ">
-      {/* {isDesktopOrLaptop && (
-      <div className="absolute inset-x-0 inset-0 blur-[1px]">
-        <video autoPlay muted loop className="h-full w-full object-cover">
-          <source src="https://res.cloudinary.com/dff8nl6lq/video/upload/v1696781227/DroneMansaoAzul_jqwemd.mp4" type="video/mp4" />
-        </video>
-      </div>
-      )}
-      {isTabletOrMobile && (
-      <div className="absolute inset-x-0 inset-0 blur-[1px]">
-      <video autoPlay muted loop className="h-full w-full object-cover">
-        <source src="https://www.leagueoflegends.com/static/hero-de0ba45b1d0959277d12545fbb645722.mp4" type="video/mp4" />
-      </video>
-    </div>
-      )} */}
-      {/* <div className="absolute inset-x-0 inset-0 blur-[1px]">
-        <video autoPlay muted loop className="h-full w-full object-cover">
-          {isDesktopOrLaptop && (
-            <source
-              src="https://res.cloudinary.com/dff8nl6lq/video/upload/v1696781227/DroneMansaoAzul_jqwemd.mp4"
-              type="video/mp4"
-            />
-          )}
-          {isTabletOrMobile && (
-            <source
-              src="https://www.leagueoflegends.com/static/hero-de0ba45b1d0959277d12545fbb645722.mp4"
-              type="video/mp4"
-            />
-          )}
-        </video>
-      </div> */}
-
-      {isTabletOrMobile ? (
-        <div className="absolute inset-x-0 inset-0 blur-[1px]">
-          <video autoPlay muted loop className="h-full w-full object-cover">
-            <source
-              src="https://www.leagueoflegends.com/static/hero-de0ba45b1d0959277d12545fbb645722.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
-      ) : (
-        <div className="absolute inset-x-0 inset-0 blur-[1px]">
+              <div className="absolute inset-x-0 inset-0">
           <video autoPlay muted loop className="h-full w-full object-cover">
             <source
               src="https://res.cloudinary.com/dff8nl6lq/video/upload/f_auto:video,q_auto/DroneMansaoAzul_jqwemd"
@@ -60,19 +46,16 @@ export default function Header() {
             />
           </video>
         </div>
-      )}
-
-
 
       <div className="relative px-4 py-24 sm:py-32 md:py-32 lg:py-48 sm:max-w-xl md:max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto">
-        <p className="text-center text-lg md:text-xl lg:text-2xl font-semibold tracking-wide mb-8 md:mb-12 lg:mb-16 mt-6 text-gray-300">
+        <p className="text-center text-lg md:text-xl lg:text-2xl font-semibold tracking-wide mb-8 md:mb-12 lg:mb-16 mt-6 text-white-300">
           O lugar certo para você ficar em Lavras-MG
         </p>
         <h1 className="text-center font-extrabold uppercase text-gray-900 text-3xl sm:text-5xl md:text-6xl lg:text-7xl mb-4 md:mb-6 lg:mb-8">
           <span className="text-white">Pensão Mansão</span>
           <span className="text-blue-700"> Azul</span>
         </h1>
-        <p className="text-center text-lg md:text-xl lg:text-2xl font-semibold tracking-wide mb-8 md:mb-12 lg:mb-16 mt-6 text-gray-300">
+        <p className="text-center text-lg md:text-xl lg:text-2xl font-semibold tracking-wide mb-8 md:mb-12 lg:mb-16 mt-6 text-white-500">
           Mais de 20 anos de tradição e qualidade
         </p>
 

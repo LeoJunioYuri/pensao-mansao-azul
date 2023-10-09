@@ -24,7 +24,8 @@ export default function RoomCard({ product }: { product: Room }) {
   const [isLoading, setLoading] = useState(true);
 
   return (
-    <Link href={`/products/${product.id}`} className="group">
+    //<Link href={`/products/${product.id}`} className="group">
+    <div className="group">
       <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8 hover:shadow-lg dark:shadow-babyBlue transition-all duration-300 hover:scale-104">
         <Image
           alt="product image"
@@ -46,7 +47,7 @@ export default function RoomCard({ product }: { product: Room }) {
       {/* <p className="mt-1 text-sm italic text-gray-500">
         {product.shortDescription}
       </p> */}
-    </Link>
+    </div>
   );
 }
 
