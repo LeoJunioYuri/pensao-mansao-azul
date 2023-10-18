@@ -1,7 +1,7 @@
-'use client'
+"use client";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "/public/logo-example.svg";
+import logo from "/public/pensaoLogoSVG.svg";
 import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
@@ -14,10 +14,14 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-navyBlue border-gray-200 dark:bg-darkNavyBlue shadow-lg">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
         <Link href="/" className="flex items-center">
-          <Image src={logo} className="h-8 mr-3" alt="Logo Pensão" />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
+          <Image
+            src={logo}
+            className="mr-3 w-[70px] h-[70px]"
+            alt="Logo Pensão"
+          />
+          <span className="self-center text-2xl font-semibold whitespace-nowrap text-white pt-2">
             Pensão Mansão Azul
           </span>
         </Link>
