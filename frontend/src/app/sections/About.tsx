@@ -54,11 +54,8 @@ export default function About() {
         <div className="sm:w-1/2 lg:w-2/3 sm:rounded-t-none sm:rounded-l-lg relative">
             <div className="h-64 sm:h-96 relative">
               <Image
-                //src={featuredPost.fields.image.url}
                 src={img2}
-                //alt={featuredPost.fields.image.label}
                 alt="Foto do quarto número 6"
-                // rounded-t-lg sm:rounded-b-lg sm:rounded-t-none
                 className="rounded-b-lg rounded-t-none sm:rounded-r-lg sm:rounded-l-none"
                 fill
                 sizes="(max-width: 640px) 100vw,
@@ -72,9 +69,7 @@ export default function About() {
         <div className="sm:w-1/2 lg:w-2/3 sm:rounded-t-none sm:rounded-l-lg relative">
             <div className="h-64 sm:h-96 relative">
               <Image
-                //src={featuredPost.fields.image.url}
                 src={img3}
-                //alt={featuredPost.fields.image.label}
                 alt="foto panorâmica da vista da cidade"
                 className="object-cover object-center rounded-t-lg sm:rounded-r-none sm:rounded-l-lg"
                 fill
