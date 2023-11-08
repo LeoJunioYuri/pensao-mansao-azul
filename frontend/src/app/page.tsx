@@ -5,14 +5,12 @@ import { Rooms } from './sections/Rooms'
 import Contact from './sections/Contact'
 import Perks from './sections/Perks'
 
-const quarto5 = require('/public/quarto5.jpg');
-const quarto13 = require('/public/quarto13.jpg');
-const quarto15 = require('/public/quarto15.jpg');
-const quarto16 = require('/public/quarto16.jpg');
+const quarto6 = require('/public/quarto6.jpg');
+const quarto15 = require('/public/quarto15.jpeg');
+const quarto16 = require('/public/quarto16.jpeg');
 const quartoTorre = require('/public/quarto-torre.jpg');
 const quarto18 = require('/public/quarto18.jpg');
 const sala4 = require('/public/sala4andar.jpeg');
-const salaEstar = require('/public/sala.jpg');
 const vistaAerea = require('/public/vistaAerea.jpg');
 const casaDrone = require('/public/casaDrone.jpg');
 
@@ -45,19 +43,6 @@ const topRooms = [
   },
   {
     id: 3,
-    name: "Quarto 5",
-    imageGroups: [
-      {
-        images: [
-          {
-            link: quarto5,
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: 4,
     name: "Vista aérea",
     imageGroups: [
       {
@@ -70,8 +55,34 @@ const topRooms = [
     ],
   },
   {
+    id: 4,
+    name: "Suíte 6",
+    imageGroups: [
+      {
+        images: [
+          {
+            link: quarto6,
+          },
+        ],
+      },
+    ],
+  },
+  {
     id: 5,
-    name: "Quarto 16",
+    name: "Suíte 15",
+    imageGroups: [
+      {
+        images: [
+          {
+            link: quarto15,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 6,
+    name: "Suíte 16",
     imageGroups: [
       {
         images: [
@@ -83,8 +94,8 @@ const topRooms = [
     ],
   },
   {
-    id: 6,
-    name: "Quarto 18",
+    id: 7,
+    name: "Suíte 18",
     imageGroups: [
       {
         images: [
@@ -96,7 +107,7 @@ const topRooms = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     name: "Quarto torre",
     imageGroups: [
       {
