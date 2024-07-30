@@ -1,15 +1,25 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "/public/pensaoLogoSVG.svg";
 import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import logo from "/public/pensaoLogoSVG.svg";
 
-export default function Navbar() {
+interface NavbarProps {
+  activePath: string;
+}
+
+export default function Navbar({ activePath }: NavbarProps) {
   const [openNav, setOpenNav] = useState(false);
 
   const handleToggleNav = () => {
     setOpenNav(!openNav);
+  };
+
+  const getLinkClasses = (path: string) => {
+    return activePath === path
+      ? "block py-2 pl-3 pr-4 text-botticelli bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+      : "block py-2 pl-3 pr-4 text-botticelli rounded hover:sail md:hover:bg-transparent md:border-0 md:hover:text-sail md:p-0 dark:text-white md:dark:hover:sail dark:hover:sail dark:hover:sail md:dark:hover:bg-transparent";
   };
 
   return (
@@ -31,7 +41,7 @@ export default function Navbar() {
           type="button"
           className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="navbar-default"
-          aria-expanded={openNav}
+          aria-expanded={openNav ? "true" : "false"}
           onClick={handleToggleNav}
         >
           <span className="sr-only">Open main menu</span>
@@ -47,52 +57,41 @@ export default function Navbar() {
           } w-full md:block md:w-auto`}
           id="navbar-default"
         >
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 ">
+          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
             <li>
               <Link href="/">
-                <span
-                  className="block py-2 pl-3 pr-4 text-botticelli bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-                  onClick={handleToggleNav}
-                >
+                <a className={getLinkClasses("/")}>
                   Home
-                </span>
+                </a>
               </Link>
             </li>
             <li>
-              <Link
-                href="/sobre"
-                className="block py-2 pl-3 pr-4 text-botticelli rounded hover:sail md:hover:bg-transparent md:border-0 md:hover:text-sail md:p-0 dark:text-white md:dark:hover:sail dark:hover:sail dark:hover:sail md:dark:hover:bg-transparent"
-                onClick={handleToggleNav}
-              >
-                Sobre
+              <Link href="/sobre">
+                <a className={getLinkClasses("/sobre")}>
+                  Sobre
+                </a>
               </Link>
             </li>
             <li>
-              <Link
-                href="/quartos"
-                className="block py-2 pl-3 pr-4 text-botticelli rounded hover:sail md:hover:bg-transparent md:border-0 md:hover:text-sail md:p-0 dark:text-white md:dark:hover:sail dark:hover:sail dark:hover:sail md:dark:hover:bg-transparent"
-                onClick={handleToggleNav}
-              >
-                Quartos
+              <Link href="/quartos">
+                <a className={getLinkClasses("/quartos")}>
+                  Quartos
+                </a>
               </Link>
             </li>
             <li>
-              <a
-                href="/#vantagens"
-                className="block py-2 pl-3 pr-4 text-botticelli rounded hover:sail md:hover:bg-transparent md:border-0 md:hover:text-sail md:p-0 dark:text-white md:dark:hover:sail dark:hover:sail dark:hover:sail md:dark:hover:bg-transparent"
-                onClick={handleToggleNav}
-              >
-                Serviços
-              </a>
+              <Link href="/#vantagens">
+                <a className={getLinkClasses("/#vantagens")}>
+                  Serviços
+                </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/#contato"
-                className="block py-2 pl-3 pr-4 text-botticelli rounded hover:sail md:hover:bg-transparent md:border-0 md:hover:text-sail md:p-0 dark:text-white md:dark:hover:sail dark:hover:sail dark:hover:sail md:dark:hover:bg-transparent"
-                onClick={handleToggleNav}
-              >
-                Contato
-              </a>
+              <Link href="/#contato">
+                <a className={getLinkClasses("/#contato")}>
+                  Contato
+                </a>
+              </Link>
             </li>
           </ul>
         </div>

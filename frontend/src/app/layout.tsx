@@ -4,6 +4,7 @@ import Head from 'next/head';
 import { Analytics } from '@vercel/analytics/react';
 import Navbar from "./sections/Navbar";
 import Footer from './sections/Footer';
+import { usePathname } from 'next/navigation';
 import "./globals.css";
 
 const thumbnailCasa = require("/public/pensaoMansaoAzulFotoDrone.png").default;
@@ -13,6 +14,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = usePathname();
+
   useEffect(() => {
     const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)");
     const localStorageTheme = localStorage.getItem("theme");
@@ -50,7 +53,7 @@ export default function RootLayout({
         <meta name="twitter:image" content="https://example.com/minha-imagem.jpg" /> */}
       </Head>
       <body>
-        <Navbar />
+        <Navbar activePath={pathname} />
         {children}
         <Footer />
         <Analytics />
